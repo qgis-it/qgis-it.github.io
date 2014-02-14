@@ -1,0 +1,75 @@
+/* Make something awesome! */
+body {
+ background: #fff url('fuller_us.png') no-repeat top right;
+ background-attachment:fixed;
+ font-size: 14px;
+}
+
+a {
+  font-weight: bold;
+}
+a:hover {
+  color: #65D9E3;
+  text-decoration: none;
+}
+
+.container {
+   margin-left: 0;
+}
+
+.navbar.transparent.navbar-default {
+ background-image: none;
+ background-color: transparent;
+ border: 0;
+}
+
+.navbar-default a.navbar-brand {
+   color: #dd42ff;
+   font-family: 'Quicksand', Helvetica, Arial, sans-serif;
+   font-weight: 700;
+   font-size: 4.4em;
+   letter-spacing: 1px;
+   margin-top: 30px;
+   margin-bottom: 10px;
+   padding-left: 20px;
+   text-shadow: 1px 1px 2px rgba(150, 150, 150, 0.82);
+}
+
+ul.nav.navbar-nav {
+  margin-left: -12px;
+}
+
+ul.nav.navbar-nav > li a {
+  font-size: 1.3em;
+  background-color: transparent;
+  color: #dd42ff;
+}
+
+ul.nav.navbar-nav > li.active a{
+  background-color: transparent;
+  background-image: none;
+  color: #000;
+}
+
+ul.nav.navbar-nav > li a:hover {
+  color: #65D9E3;
+}
+
+.byline {
+  color: #000;
+  line-height: 1.5em;
+  font-size: 1.6em !important;
+}
+
+.featurette {
+ width: 70%;
+}
+
+.lead {
+ font-size: 1.2em;
+ line-height: 1.8em;
+}
+
+.schedule {
+ margin-left: 30px;
+}
