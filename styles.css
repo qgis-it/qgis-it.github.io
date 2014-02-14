@@ -14,7 +14,7 @@ a:hover {
 }
 
 .container {
-   margin-left: 0;
+   margin-left: 10px;
 }
 
 .navbar.transparent.navbar-default {
@@ -25,18 +25,18 @@ a:hover {
 
 .navbar-default a.navbar-brand {
    color: #dd42ff;
-   font-family: 'Quicksand', Helvetica, Arial, sans-serif;
-   font-weight: 700;
+   font-family: 'Lato', Helvetica, Arial, sans-serif;
+   font-weight: 900;
    font-size: 4.4em;
    letter-spacing: 1px;
-   margin-top: 30px;
-   margin-bottom: 10px;
-   padding-left: 20px;
+   margin-top: 20px;
+   padding-left: 30px;
    text-shadow: 1px 1px 2px rgba(150, 150, 150, 0.82);
+   line-height: 1.5em;
 }
 
 ul.nav.navbar-nav {
-  margin-left: -12px;
+  margin-left: 15px;
 }
 
 ul.nav.navbar-nav > li a {
@@ -72,4 +72,13 @@ ul.nav.navbar-nav > li a:hover {
 
 .schedule {
  margin-left: 30px;
+}
+
+.featurette-divider {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.featurette-heading {
+  line-height: 1.5em;
+  font-size: 3em;
 }
