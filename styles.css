@@ -24,7 +24,7 @@ a:hover {
 }
 
 .navbar-default a.navbar-brand {
-   color: #dd42ff;
+   color: #000000;
    font-family: 'Lato', Helvetica, Arial, sans-serif;
    font-weight: 900;
    font-size: 4.4em;
@@ -36,7 +36,7 @@ a:hover {
 }
 
 .navbar-default a.navbar-brand:hover {
-  color: #dd42ff;
+  color: #000000;
 }
 
 ul.nav.navbar-nav {
@@ -46,7 +46,7 @@ ul.nav.navbar-nav {
 ul.nav.navbar-nav > li a {
   font-size: 1.3em;
   background-color: transparent;
-  color: #dd42ff;
+  color: #000000;
 }
 
 ul.nav.navbar-nav > li.active a{
