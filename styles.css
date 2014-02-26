@@ -38,13 +38,13 @@ hr {
 
 .navbar-collapse {
   background-color: transparent;
-  z-index: 200;
 }
 
 ul.nav.navbar-nav {
   margin-left: 0px;
   height: 67px;
   background-color: transparent;
+  width: 89%;
 }
 
 ul.nav.navbar-nav > li {
@@ -52,22 +52,18 @@ ul.nav.navbar-nav > li {
   text-transform: uppercase;
 }
 
-ul.nav.navbar-nav > li > a {
-  line-height: 34px;
+ul.nav.navbar-nav > li.navbar-dropdown {
+  float: right;
 }
 
-#osgeo {
-  display: inline-block;
+ul.nav.navbar-nav > li > a {
   line-height: 34px;
-  margin-top: 14px;
-  margin-left: 6%;
-  font-style: italic;
 }
 
 select#other_groups {
   float: right;
   margin: 18px 1px 0 4px;
-  width: 200px;
+  width: 168px;
   background: #aaa url('images/down-arrow.png') no-repeat 95% 50%;
   line-height: 20px;
   color: white;
@@ -86,10 +82,11 @@ select#other_groups {
 
 .select-dropdown {
   line-height: 40px;
+  float:right;
+  width: 100%;
 }
 
 .page-title {
-  margin-top: 30px;
   color: #0084c8;
   font-family: 'Lato', Helvetica, Arial, sans-serif;
   font-weight: 900;
@@ -114,12 +111,14 @@ ul.page-nav li {
 }
 
 .byline {
+  margin-top: 120px;
   color: #000;
   line-height: 1.5em;
   font-size: 1.6em !important;
 }
 
 .osgeo-line {
+  margin-top: 10px;
   font-size: 0.8em;
   vertical-align: bottom;
 }
@@ -203,16 +202,54 @@ footer {
   opacity: 1.0;
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (min-width: 767px) and (max-width: 833px) {
+  ul.nav.navbar-nav {
+    width: auto;
+  }
+  select#other_groups {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 767px) {
   body {
     background-attachment: scroll;
   }
-
+  .navbar {
+    background-color: transparent;
+    border-bottom: none;
+    opacity: 1.0;
+    z-index: 100;
+  }
+  .navbar-collapse {
+    background: #fff;
+    border: #fff 1px solid;
+  }
+  .navbar-brand {
+    background-color: transparent;
+  }
+  .navbar-header > button.navbar-toggle {
+    background-color: #0084c8;
+    border: #aa84c8 1px solid;
+    opacity: 1.0;
+  }
+  .page-title {
+    font-size: 4em;
+  }
   .container {
     margin-left: auto;
   }
-
+  ul.page-nav {
+    margin-left: 15px;
+    padding-left: 0;
+  }
+  ul.page-nav li {
+    margin-right: 12px;
+  }
+  ul.nav.navbar-nav > li.navbar-dropdown {
+    float: left;
+  }
   .featurette {
-   width: 100%;
+    width: 100%;
   }
 }
