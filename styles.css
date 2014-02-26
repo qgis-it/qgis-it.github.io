@@ -1,7 +1,7 @@
 body {
- background: #fff url('fuller_us.png') no-repeat 100% 0;
- background-attachment:fixed;
- font-size: 14px;
+  background: #fff url('fuller_us.png') no-repeat 100% 0;
+  background-attachment:fixed;
+  font-size: 14px;
 }
 
 a {
@@ -14,7 +14,7 @@ a:hover {
 }
 
 .container {
-   margin-left: 10px;
+  margin-left: 10px;
 }
 
 hr {
@@ -24,10 +24,10 @@ hr {
 }
 
 .navbar {
- height: 67px;
- background-color: #fff;
- opacity: 0.85;
- border-bottom: 1px solid #0084c8;
+  height: 67px;
+  background-color: #fff;
+  opacity: 0.85;
+  border-bottom: 1px solid #0084c8;
 }
 
 .navbar-brand {
@@ -118,23 +118,23 @@ ul.page-nav li {
 }
 
 .osgeo-line {
-  margin-top: 10px;
-  font-size: 0.8em;
+  font-size: 0.75em;
   vertical-align: bottom;
+  font-weight: 300;
 }
 
 .featurette {
   clear: both;
- width: 70%;
+  width: 70%;
 }
 
 .lead {
- font-size: 1.2em;
- line-height: 1.8em;
+  font-size: 1.2em;
+  line-height: 1.8em;
 }
 
 .schedule {
- margin-left: 30px;
+  margin-left: 30px;
 }
 
 .featurette-divider {
@@ -166,11 +166,9 @@ footer {
   list-style: none;
   display: inline-block;
 }
-
 .footer #social > li {
   display: inline-block;
 }
-
 .footer #social > li > a > div {
   margin-right: 20px;
   margin-left: 20px;
@@ -193,11 +191,9 @@ footer {
 .footer #contact {
   background: transparent url("images/footer-contact.png") no-repeat 0 30%;
 }
-
 .footer #twitter, #facebook, #gplus, #github, #contact {
   opacity: 0.4;
 }
-
 .footer #twitter:hover, #facebook:hover, #gplus:hover, #github:hover, #contact:hover {
   opacity: 1.0;
 }
