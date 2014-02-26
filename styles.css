@@ -1,5 +1,5 @@
 body {
- background: #fff url('fuller_us.png') no-repeat top right;
+ background: #fff url('fuller_us.png') no-repeat 100% 0;
  background-attachment:fixed;
  font-size: 14px;
 }
@@ -17,46 +17,92 @@ a:hover {
    margin-left: 10px;
 }
 
-.navbar.transparent.navbar-default {
- background-image: none;
- background-color: transparent;
- border: 0;
+hr {
+  width: 60%;
+  float: left;
+  display: block;
 }
 
-.navbar-default a.navbar-brand {
-   color: #0084c8;
-   font-family: 'Lato', Helvetica, Arial, sans-serif;
-   font-weight: 900;
-   font-size: 4.4em;
-   letter-spacing: 1px;
-   margin-top: 20px;
-   padding-left: 30px;
-   text-shadow: 1px 1px 2px rgba(150, 150, 150, 0.82);
-   line-height: 1.5em;
+.navbar {
+ height: 67px;
+ background-color: #fff;
+ opacity: 0.85;
+ border-bottom: 1px solid #0084c8;
 }
 
-.navbar-default a.navbar-brand:hover {
-  color: #0084c8;
+.navbar-brand {
+  background: #fff url('images/qgis_logo.png') no-repeat 20px 2px;
+  height: 67px;
+  width: 100px;
+}
+
+.navbar-collapse {
+  background-color: transparent;
+  z-index: 200;
 }
 
 ul.nav.navbar-nav {
-  margin-left: 15px;
-}
-
-ul.nav.navbar-nav > li a {
-  font-size: 1.3em;
+  margin-left: 0px;
+  height: 67px;
   background-color: transparent;
-  color: #000;
 }
 
-ul.nav.navbar-nav > li.active a{
-  background-color: transparent;
-  background-image: none;
-  color: #000;
+ul.nav.navbar-nav > li {
+  height: 67px;
+  text-transform: uppercase;
 }
 
-ul.nav.navbar-nav > li a:hover {
+ul.nav.navbar-nav > li > a {
+  line-height: 34px;
+}
+
+select#other_groups {
+  float: right;
+  margin: 18px 1px 0 4px;
+  width: 200px;
+  background: #aaa url('images/down-arrow.png') no-repeat 95% 50%;
+  line-height: 20px;
+  color: white;
+  outline: none;
+  display: inline-block;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  padding: 3px 3px 3px 5px;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.select-dropdown {
+  line-height: 40px;
+}
+
+.page-title {
+  margin-top: 30px;
   color: #0084c8;
+  font-family: 'Lato', Helvetica, Arial, sans-serif;
+  font-weight: 900;
+  font-size: 4.4em;
+  letter-spacing: 1px;
+  padding-left: 25px;
+  text-shadow: 1px 1px 2px rgba(150, 150, 150, 0.82);
+  line-height: 1.5em;
+}
+
+ul.page-nav {
+  margin-top: 15px;
+  margin-left: 30px;
+  display: inline-block;
+  list-style: none;
+  font-size: 1.2em;
+}
+
+ul.page-nav li {
+  display: inline-block;
+  margin-right: 25px;
 }
 
 .byline {
@@ -66,6 +112,7 @@ ul.nav.navbar-nav > li a:hover {
 }
 
 .featurette {
+  clear: both;
  width: 70%;
 }
 
@@ -85,6 +132,54 @@ ul.nav.navbar-nav > li a:hover {
 .featurette-heading {
   line-height: 1.5em;
   font-size: 3em;
+}
+
+footer {
+  background: #ccc;
+  border-top: 1px solid #0084c8;
+  color: #000;
+  margin-bottom: 0;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+.footer .container {
+  width: 100%;
+}
+.footer .credit {
+  border: 0;
+}
+.footer #social {
+  list-style: none;
+  display: inline-block;
+}
+
+.footer #social > li {
+  display: inline-block;
+}
+
+.footer #social > li > a > div {
+  margin-right: 20px;
+  margin-left: 20px;
+  height: 36px;
+  width: 30px;
+  outline: none;
+}
+.footer #twitter {
+  background: transparent url("images/footer-twitter.png") no-repeat 0 0;
+  margin-left: 20px;
+}
+.footer #facebook {
+  background: transparent url("images/footer-facebook.png") no-repeat 0 0;
+}
+.footer #gplus {
+  background: transparent url("images/footer-gplus.png") no-repeat 0 0;
+}
+.footer #github {
+  background: transparent url("images/footer-github.png") no-repeat 0 0;
+}
+.footer #aboutcontact {
+  background: transparent url("images/footer-contact.png") no-repeat 0 50%;
 }
 
 
