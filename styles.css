@@ -56,6 +56,14 @@ ul.nav.navbar-nav > li > a {
   line-height: 34px;
 }
 
+#osgeo {
+  display: inline-block;
+  line-height: 34px;
+  margin-top: 14px;
+  margin-left: 6%;
+  font-style: italic;
+}
+
 select#other_groups {
   float: right;
   margin: 18px 1px 0 4px;
@@ -111,6 +119,11 @@ ul.page-nav li {
   font-size: 1.6em !important;
 }
 
+.osgeo-line {
+  font-size: 0.8em;
+  vertical-align: bottom;
+}
+
 .featurette {
   clear: both;
  width: 70%;
@@ -135,7 +148,8 @@ ul.page-nav li {
 }
 
 footer {
-  background: #ccc;
+  background: #fff;
+  opacity: 0.7;
   border-top: 1px solid #0084c8;
   color: #000;
   margin-bottom: 0;
@@ -167,7 +181,6 @@ footer {
 }
 .footer #twitter {
   background: transparent url("images/footer-twitter.png") no-repeat 0 0;
-  margin-left: 20px;
 }
 .footer #facebook {
   background: transparent url("images/footer-facebook.png") no-repeat 0 0;
@@ -178,10 +191,17 @@ footer {
 .footer #github {
   background: transparent url("images/footer-github.png") no-repeat 0 0;
 }
-.footer #aboutcontact {
-  background: transparent url("images/footer-contact.png") no-repeat 0 50%;
+.footer #contact {
+  background: transparent url("images/footer-contact.png") no-repeat 0 30%;
 }
 
+.footer #twitter, #facebook, #gplus, #github, #contact {
+  opacity: 0.4;
+}
+
+.footer #twitter:hover, #facebook:hover, #gplus:hover, #github:hover, #contact:hover {
+  opacity: 1.0;
+}
 
 @media only screen and (max-width: 480px) {
   body {
