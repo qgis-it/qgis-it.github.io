@@ -76,12 +76,12 @@
    id="namedview3049"
    showgrid="false"
    inkscape:zoom="1.2"
-   inkscape:cx="350.90825"
-   inkscape:cy="362.04962"
+   inkscape:cx="610.49158"
+   inkscape:cy="620.79962"
    inkscape:window-x="107"
    inkscape:window-y="43"
    inkscape:window-maximized="0"
-   inkscape:current-layer="svg3039" />
+   inkscape:current-layer="layer2" />
 <g
    id="Layer_1">
 	<g
@@ -147,7 +147,7 @@
 
 <g
    id="g3090-0"
-   transform="matrix(-4.7952373,0,0,4.4492163,697.33886,261.38139)"
+   transform="matrix(-4.7485703,-0.66736804,-0.61921123,4.4059168,717.43081,262.51848)"
    style="fill:#0084c8;stroke:none"><path
      style="fill:#0084c8;stroke:none"
      sodipodi:nodetypes="sccccscccsccssscccs"
@@ -180,7 +180,7 @@
    style="font-size:12px;font-style:normal;font-weight:bold;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans Bold"
    id="text3386"
    sodipodi:linespacing="125%"
-   transform="translate(2,-42)"><textPath
+   transform="matrix(0.99026807,0.1391731,-0.1391731,0.99026807,71.081478,-134.6829)"><textPath
      xlink:href="#path4455"
      id="textPath4463"><tspan
    id="tspan3390"
@@ -188,15 +188,17 @@
    style="letter-spacing:1.5px"
    id="tspan3521">1st</tspan> Annual User Meeting</tspan></textPath></text>
 
+
 <text
    xml:space="preserve"
    style="font-size:12px;font-style:normal;font-weight:bold;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans Bold"
    id="text3386-54"
    sodipodi:linespacing="125%"
-   transform="translate(-0.863196,-11.663122)"><textPath
+   transform="matrix(0.99026807,0.1391731,-0.1391731,0.99026807,64.024069,-105.03973)"><textPath
      xlink:href="#path4455-3"
      id="textPath4463-4"
      style="font-size:14px">             April 11, 2014 in D.C.</textPath></text>
+
 
 </g><text
    xml:space="preserve"
@@ -207,6 +209,7 @@
      xlink:href="#path3366-8"
      id="textPath3392-2"
      style="font-size:18px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;letter-spacing:1px;font-family:Lato;-inkscape-font-specification:Lato Bold"></textPath></text>
+
 
 <path
    style="fill:none;stroke:none"
