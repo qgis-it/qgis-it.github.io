@@ -1,6 +1,7 @@
-qgis-us.github.io
+qgis-template.github.io
 =================
 
-QGIS US Website
+Template for QGIS User Group Website.
+Based on https://github.com/qgis-us.
 
-http://qgis.us
+TBD: list here files to change for localization.
