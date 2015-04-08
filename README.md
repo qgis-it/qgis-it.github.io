@@ -1,8 +1,8 @@
-qgis-template.github.io
-=================
+qgis-it.github.io
+==================
 
-Template for QGIS User Group Website.
-Based on https://github.com/qgis-us.
+QGIS Italian User Group Website.
+Based on https://github.com/qgis.
 
 TBD: list here files to change for localization.
 
