@@ -1,4 +1,4 @@
-qgis-it.github.io
+qgis-it
 ==================
 
 QGIS Italian User Group Website.
