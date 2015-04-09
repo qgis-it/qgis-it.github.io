@@ -1,5 +1,5 @@
 <!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
-<qgis projectname="" version="2.9.0-Master">
+<qgis projectname="" version="2.8.1-Wien">
   <title></title>
   <layer-tree-group expanded="1" checked="Qt::Checked" name="">
     <customproperties/>
@@ -61,7 +61,7 @@
   </legend>
   <Composer title="italia" visible="0">
     <Composition gridVisible="0" printResolution="300" paperWidth="170" snapGridOffsetX="0" guidesVisible="1" snapGridResolution="10" snapGridOffsetY="0" alignmentSnap="1" snapping="0" snapTolerancePixels="5" numPages="1" paperHeight="190" smartGuides="1" printAsRaster="0" generateWorldFile="0">
-      <symbol alpha="1" clip_to_extent="1" type="fill" name="">
+      <symbol alpha="1" type="fill" name="">
         <layer pass="0" class="SimpleFill" locked="0">
           <prop k="border_width_map_unit_scale" v="0,0"/>
           <prop k="color" v="255,255,255,255"/>
@@ -74,14 +74,6 @@
           <prop k="outline_width" v="0.26"/>
           <prop k="outline_width_unit" v="MM"/>
           <prop k="style" v="solid"/>
-          <effect enabled="0" type="effectStack">
-            <effect type="drawSource">
-              <prop k="blend_mode" v="0"/>
-              <prop k="draw_mode" v="2"/>
-              <prop k="enabled" v="1"/>
-              <prop k="transparency" v="0"/>
-            </effect>
-          </effect>
         </layer>
       </symbol>
       <ComposerMap mapRotation="0" keepLayerSet="false" id="0" previewMode="Cache" drawCanvasItems="true">
@@ -90,7 +82,7 @@
         <Grid/>
         <ComposerMapGrid rightAnnotationDirection="0" gridFramePenColor="0,0,0,255" show="1" bottomAnnotationPosition="1" annotationFont="Cantarell,11,-1,5,50,0,0,0,0,0" annotationPrecision="3" showAnnotation="0" topFrameDivisions="0" uuid="{390c3c1a-4fb2-46ee-a487-d8e0844b6bac}" leftAnnotationDirection="0" topAnnotationPosition="1" rightAnnotationDisplay="0" offsetX="0" offsetY="0" rightFrameDivisions="0" gridStyle="0" annotationFontColor="0,0,0,255" intervalX="8" gridFrameSideFlags="15" intervalY="8" bottomAnnotationDirection="0" leftAnnotationDisplay="0" leftFrameDivisions="0" frameFillColor1="255,255,255,255" frameFillColor2="0,0,0,255" crossLength="3" gridFramePenThickness="0.29999999999999999" bottomAnnotationDisplay="0" unit="0" topAnnotationDisplay="0" leftAnnotationPosition="1" blendMode="0" gridFrameStyle="0" rightAnnotationPosition="1" gridFrameWidth="2" name="Grid 1" annotationFormat="0" bottomFrameDivisions="0" topAnnotationDirection="0" frameAnnotationDistance="1">
           <lineStyle>
-            <symbol alpha="0.690196" clip_to_extent="1" type="line" name="">
+            <symbol alpha="0.690196" type="line" name="">
               <layer pass="0" class="SimpleLine" locked="0">
                 <prop k="capstyle" v="flat"/>
                 <prop k="customdash" v="5;2"/>
@@ -107,19 +99,11 @@
                 <prop k="offset_unit" v="MM"/>
                 <prop k="use_custom_dash" v="0"/>
                 <prop k="width_map_unit_scale" v="0,0"/>
-                <effect enabled="0" type="effectStack">
-                  <effect type="drawSource">
-                    <prop k="blend_mode" v="0"/>
-                    <prop k="draw_mode" v="2"/>
-                    <prop k="enabled" v="1"/>
-                    <prop k="transparency" v="0"/>
-                  </effect>
-                </effect>
               </layer>
             </symbol>
           </lineStyle>
           <markerStyle>
-            <symbol alpha="1" clip_to_extent="1" type="marker" name="">
+            <symbol alpha="1" type="marker" name="">
               <layer pass="0" class="SimpleMarker" locked="0">
                 <prop k="angle" v="0"/>
                 <prop k="color" v="0,0,0,255"/>
@@ -138,14 +122,6 @@
                 <prop k="size_map_unit_scale" v="0,0"/>
                 <prop k="size_unit" v="MM"/>
                 <prop k="vertical_anchor_point" v="1"/>
-                <effect enabled="0" type="effectStack">
-                  <effect type="drawSource">
-                    <prop k="blend_mode" v="0"/>
-                    <prop k="draw_mode" v="2"/>
-                    <prop k="enabled" v="1"/>
-                    <prop k="transparency" v="0"/>
-                  </effect>
-                </effect>
               </layer>
             </symbol>
           </markerStyle>
@@ -169,7 +145,7 @@
     </Composition>
   </Composer>
   <projectlayers layercount="2">
-    <maplayer minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Polygon" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
+    <maplayer minimumScale="-4.65661e-10" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Polygon" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
       <id>italy_regions20150409084450043</id>
       <datasource>./italy_regions.geojson</datasource>
       <title></title>
@@ -219,71 +195,24 @@
       </edittypes>
       <renderer-v2 symbollevels="0" type="singleSymbol">
         <symbols>
-          <symbol alpha="0.8" clip_to_extent="1" type="fill" name="0">
-            <layer pass="0" class="ShapeburstFill" locked="0">
-              <prop k="blur_radius" v="0"/>
+          <symbol alpha="0.8" type="fill" name="0">
+            <layer pass="0" class="SimpleFill" locked="0">
+              <prop k="border_width_map_unit_scale" v="0,0"/>
               <prop k="color" v="150,206,217,207"/>
-              <prop k="color1" v="0,0,255,255"/>
-              <prop k="color2" v="0,255,0,255"/>
-              <prop k="color_type" v="0"/>
-              <prop k="discrete" v="0"/>
-              <prop k="distance_map_unit_scale" v="0,0"/>
-              <prop k="distance_unit" v="MM"/>
-              <prop k="gradient_color2" v="255,255,255,255"/>
-              <prop k="ignore_rings" v="0"/>
-              <prop k="max_distance" v="5"/>
+              <prop k="joinstyle" v="bevel"/>
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0"/>
               <prop k="offset_unit" v="MM"/>
-              <prop k="use_whole_shape" v="1"/>
-              <effect enabled="0" type="effectStack">
-                <effect type="drawSource">
-                  <prop k="blend_mode" v="0"/>
-                  <prop k="draw_mode" v="2"/>
-                  <prop k="enabled" v="1"/>
-                  <prop k="transparency" v="0"/>
-                </effect>
-              </effect>
-            </layer>
-            <layer pass="0" class="SimpleLine" locked="0">
-              <prop k="capstyle" v="square"/>
-              <prop k="customdash" v="5;2"/>
-              <prop k="customdash_map_unit_scale" v="0,0"/>
-              <prop k="customdash_unit" v="MM"/>
-              <prop k="draw_inside_polygon" v="0"/>
-              <prop k="joinstyle" v="bevel"/>
-              <prop k="line_color" v="243,243,82,205"/>
-              <prop k="line_style" v="solid"/>
-              <prop k="line_width" v="0.35"/>
-              <prop k="line_width_unit" v="MM"/>
-              <prop k="offset" v="0"/>
-              <prop k="offset_map_unit_scale" v="0,0"/>
-              <prop k="offset_unit" v="MM"/>
-              <prop k="use_custom_dash" v="0"/>
-              <prop k="width_map_unit_scale" v="0,0"/>
-              <effect enabled="0" type="effectStack">
-                <effect type="drawSource">
-                  <prop k="blend_mode" v="0"/>
-                  <prop k="draw_mode" v="2"/>
-                  <prop k="enabled" v="1"/>
-                  <prop k="transparency" v="0"/>
-                </effect>
-              </effect>
+              <prop k="outline_color" v="44,171,255,128"/>
+              <prop k="outline_style" v="solid"/>
+              <prop k="outline_width" v="0.26"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="style" v="solid"/>
             </layer>
           </symbol>
         </symbols>
         <rotation/>
         <sizescale scalemethod="area"/>
-        <effect enabled="0" type="effectStack">
-          <effect type="blur">
-            <prop k="blend_mode" v="0"/>
-            <prop k="blur_level" v="10"/>
-            <prop k="blur_method" v="0"/>
-            <prop k="draw_mode" v="1"/>
-            <prop k="enabled" v="1"/>
-            <prop k="transparency" v="0"/>
-          </effect>
-        </effect>
       </renderer-v2>
       <customproperties>
         <property key="labeling" value="pal"/>
@@ -704,10 +633,10 @@
       <renderer-v2 preprocessing="0" type="invertedPolygonRenderer">
         <renderer-v2 symbollevels="0" type="singleSymbol">
           <symbols>
-            <symbol alpha="0.14902" clip_to_extent="1" type="fill" name="0">
+            <symbol alpha="0.14902" type="fill" name="0">
               <layer pass="0" class="SimpleFill" locked="0">
                 <prop k="border_width_map_unit_scale" v="0,0"/>
-                <prop k="color" v="190,209,186,255"/>
+                <prop k="color" v="44,171,255,255"/>
                 <prop k="joinstyle" v="bevel"/>
                 <prop k="offset" v="0,0"/>
                 <prop k="offset_map_unit_scale" v="0,0"/>
@@ -717,14 +646,6 @@
                 <prop k="outline_width" v="0.26"/>
                 <prop k="outline_width_unit" v="MM"/>
                 <prop k="style" v="solid"/>
-                <effect enabled="0" type="effectStack">
-                  <effect type="drawSource">
-                    <prop k="blend_mode" v="0"/>
-                    <prop k="draw_mode" v="2"/>
-                    <prop k="enabled" v="1"/>
-                    <prop k="transparency" v="0"/>
-                  </effect>
-                </effect>
               </layer>
               <layer pass="0" class="SimpleLine" locked="0">
                 <prop k="capstyle" v="square"/>
@@ -742,36 +663,12 @@
                 <prop k="offset_unit" v="MM"/>
                 <prop k="use_custom_dash" v="0"/>
                 <prop k="width_map_unit_scale" v="0,0"/>
-                <effect enabled="0" type="effectStack">
-                  <effect type="drawSource">
-                    <prop k="blend_mode" v="0"/>
-                    <prop k="draw_mode" v="2"/>
-                    <prop k="enabled" v="1"/>
-                    <prop k="transparency" v="0"/>
-                  </effect>
-                </effect>
               </layer>
             </symbol>
           </symbols>
           <rotation/>
           <sizescale scalemethod="area"/>
-          <effect enabled="0" type="effectStack">
-            <effect type="drawSource">
-              <prop k="blend_mode" v="0"/>
-              <prop k="draw_mode" v="2"/>
-              <prop k="enabled" v="1"/>
-              <prop k="transparency" v="0"/>
-            </effect>
-          </effect>
         </renderer-v2>
-        <effect enabled="0" type="effectStack">
-          <effect type="drawSource">
-            <prop k="blend_mode" v="0"/>
-            <prop k="draw_mode" v="2"/>
-            <prop k="enabled" v="1"/>
-            <prop k="transparency" v="0"/>
-          </effect>
-        </effect>
       </renderer-v2>
       <customproperties>
         <property key="labeling" value="pal"/>
@@ -918,7 +815,7 @@
       </customproperties>
       <blendMode>0</blendMode>
       <featureBlendMode>0</featureBlendMode>
-      <layerTransparency>75</layerTransparency>
+      <layerTransparency>70</layerTransparency>
       <displayfield>name</displayfield>
       <label>0</label>
       <labelattributes>
