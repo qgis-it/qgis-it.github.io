@@ -14,10 +14,10 @@
   <mapcanvas>
     <units>meters</units>
     <extent>
-      <xmin>-142215.82849611772689968</xmin>
-      <ymin>4036855.44720186479389668</ymin>
-      <xmax>1880873.31079002912156284</xmax>
-      <ymax>5540915.57185653317719698</ymax>
+      <xmin>-29900.65427950222510844</xmin>
+      <ymin>4035500.43808055389672518</ymin>
+      <xmax>1614087.09674401534721255</xmax>
+      <ymax>5257718.66550263669341803</ymax>
     </extent>
     <rotation>0</rotation>
     <projections>1</projections>
@@ -60,7 +60,7 @@
     </legendlayer>
   </legend>
   <Composer title="italia" visible="0">
-    <Composition gridVisible="0" printResolution="300" paperWidth="190" snapGridOffsetX="0" guidesVisible="1" snapGridResolution="10" snapGridOffsetY="0" alignmentSnap="1" snapping="0" snapTolerancePixels="5" numPages="1" paperHeight="170" smartGuides="1" printAsRaster="0" generateWorldFile="0">
+    <Composition gridVisible="0" printResolution="300" paperWidth="170" snapGridOffsetX="0" guidesVisible="1" snapGridResolution="10" snapGridOffsetY="0" alignmentSnap="1" snapping="0" snapTolerancePixels="5" numPages="1" paperHeight="190" smartGuides="1" printAsRaster="0" generateWorldFile="0">
       <symbol alpha="1" clip_to_extent="1" type="fill" name="">
         <layer pass="0" class="SimpleFill" locked="0">
           <prop k="border_width_map_unit_scale" v="0,0"/>
@@ -84,14 +84,11 @@
           </effect>
         </layer>
       </symbol>
-      <ComposerMap mapRotation="0" keepLayerSet="true" id="0" previewMode="Cache" drawCanvasItems="true">
-        <Extent ymin="3753547.04334035655483603" xmin="-607464.4384608258260414" ymax="5617828.11282087024301291" xmax="1476143.81566445413045585"/>
-        <LayerSet>
-          <Layer>italy_regions20150409084450043</Layer>
-          <Layer>world_countries20150409084026077</Layer>
-        </LayerSet>
+      <ComposerMap mapRotation="0" keepLayerSet="false" id="0" previewMode="Cache" drawCanvasItems="true">
+        <Extent ymin="3692358.12016977136954665" xmin="-116310.41830138229124714" ymax="5617626.12154531106352806" xmax="1606297.79345567850396037"/>
+        <LayerSet/>
         <Grid/>
-        <ComposerMapGrid rightAnnotationDirection="1" gridFramePenColor="0,0,0,255" show="1" bottomAnnotationPosition="0" annotationFont="Liberation Sans,12,-1,5,75,0,0,0,0,0" annotationPrecision="2" showAnnotation="1" topFrameDivisions="0" uuid="{3991d627-78f3-4afe-934a-3e3d27020e48}" leftAnnotationDirection="0" topAnnotationPosition="1" rightAnnotationDisplay="1" offsetX="0" offsetY="0" rightFrameDivisions="0" gridStyle="0" annotationFontColor="0,0,0,255" intervalX="5" gridFrameSideFlags="15" intervalY="5" bottomAnnotationDirection="0" leftAnnotationDisplay="3" leftFrameDivisions="0" frameFillColor1="255,255,255,255" frameFillColor2="0,0,0,255" crossLength="3" gridFramePenThickness="0.29999999999999999" bottomAnnotationDisplay="0" unit="0" topAnnotationDisplay="3" leftAnnotationPosition="1" blendMode="0" gridFrameStyle="1" rightAnnotationPosition="0" gridFrameWidth="2" name="Grid 2" annotationFormat="3" bottomFrameDivisions="0" topAnnotationDirection="0" frameAnnotationDistance="1">
+        <ComposerMapGrid rightAnnotationDirection="1" gridFramePenColor="0,0,0,255" show="1" bottomAnnotationPosition="0" annotationFont="Liberation Sans,12,-1,5,75,0,0,0,0,0" annotationPrecision="2" showAnnotation="0" topFrameDivisions="0" uuid="{3991d627-78f3-4afe-934a-3e3d27020e48}" leftAnnotationDirection="0" topAnnotationPosition="1" rightAnnotationDisplay="1" offsetX="0" offsetY="0" rightFrameDivisions="0" gridStyle="0" annotationFontColor="0,0,0,255" intervalX="5" gridFrameSideFlags="15" intervalY="5" bottomAnnotationDirection="0" leftAnnotationDisplay="3" leftFrameDivisions="0" frameFillColor1="255,255,255,255" frameFillColor2="0,0,0,255" crossLength="3" gridFramePenThickness="0.29999999999999999" bottomAnnotationDisplay="0" unit="0" topAnnotationDisplay="3" leftAnnotationPosition="1" blendMode="0" gridFrameStyle="0" rightAnnotationPosition="0" gridFrameWidth="2" name="Grid 2" annotationFormat="3" bottomFrameDivisions="0" topAnnotationDirection="0" frameAnnotationDistance="1">
           <lineStyle>
             <symbol alpha="1" clip_to_extent="1" type="line" name="">
               <layer pass="0" class="SimpleLine" locked="0">
@@ -101,7 +98,7 @@
                 <prop k="customdash_unit" v="MM"/>
                 <prop k="draw_inside_polygon" v="0"/>
                 <prop k="joinstyle" v="bevel"/>
-                <prop k="line_color" v="114,122,113,255"/>
+                <prop k="line_color" v="176,188,174,255"/>
                 <prop k="line_style" v="solid"/>
                 <prop k="line_width" v="0.3"/>
                 <prop k="line_width_unit" v="MM"/>
@@ -236,7 +233,7 @@
           </spatialrefsys>
         </ComposerMapGrid>
         <AtlasMap scalingMode="2" atlasDriven="0" margin="0.10000000000000001"/>
-        <ComposerItem pagey="0" page="1" id="" lastValidViewScaleFactor="2.98448" positionMode="0" positionLock="false" x="0" y="0" visibility="1" zValue="1" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="190" outlineWidth="0.3" excludeFromExports="0" uuid="{e43a2183-aac3-4641-9ade-36e47b66a12c}" height="170" itemRotation="0" frame="false" pagex="0">
+        <ComposerItem pagey="0" page="1" id="" lastValidViewScaleFactor="2.98448" positionMode="0" positionLock="false" x="0" y="0" visibility="1" zValue="1" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="170" outlineWidth="0.3" excludeFromExports="0" uuid="{e43a2183-aac3-4641-9ade-36e47b66a12c}" height="190" itemRotation="0" frame="false" pagex="0">
           <FrameColor alpha="255" red="0" blue="0" green="0"/>
           <BackgroundColor alpha="0" red="76" blue="186" green="71"/>
         </ComposerItem>
@@ -244,7 +241,7 @@
     </Composition>
   </Composer>
   <projectlayers layercount="2">
-    <maplayer minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Polygon" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
+    <maplayer minimumScale="-4.65661e-10" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Polygon" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
       <id>italy_regions20150409084450043</id>
       <datasource>./italy_regions.geojson</datasource>
       <title></title>
@@ -297,7 +294,7 @@
           <symbol alpha="1" clip_to_extent="1" type="fill" name="0">
             <layer pass="0" class="SimpleFill" locked="0">
               <prop k="border_width_map_unit_scale" v="0,0"/>
-              <prop k="color" v="74,194,220,255"/>
+              <prop k="color" v="150,206,217,255"/>
               <prop k="joinstyle" v="bevel"/>
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0"/>
@@ -551,7 +548,7 @@
         </edittype>
       </edittypes>
     </maplayer>
-    <maplayer minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Polygon" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
+    <maplayer minimumScale="-4.65661e-10" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Polygon" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
       <id>world_countries20150409084026077</id>
       <datasource>./world_countries.geojson</datasource>
       <title></title>
@@ -776,7 +773,7 @@
             <symbol alpha="0.368627" clip_to_extent="1" type="fill" name="0">
               <layer pass="0" class="SimpleFill" locked="0">
                 <prop k="border_width_map_unit_scale" v="0,0"/>
-                <prop k="color" v="155,165,153,255"/>
+                <prop k="color" v="190,209,186,255"/>
                 <prop k="joinstyle" v="bevel"/>
                 <prop k="offset" v="0,0"/>
                 <prop k="offset_map_unit_scale" v="0,0"/>
@@ -802,9 +799,9 @@
                 <prop k="customdash_unit" v="MM"/>
                 <prop k="draw_inside_polygon" v="1"/>
                 <prop k="joinstyle" v="bevel"/>
-                <prop k="line_color" v="79,154,171,255"/>
-                <prop k="line_style" v="solid"/>
-                <prop k="line_width" v="0.8"/>
+                <prop k="line_color" v="79,154,171,170"/>
+                <prop k="line_style" v="no"/>
+                <prop k="line_width" v="0.6"/>
                 <prop k="line_width_unit" v="MM"/>
                 <prop k="offset" v="0"/>
                 <prop k="offset_map_unit_scale" v="0,0"/>

@@ -59,7 +59,7 @@
       </filegroup>
     </legendlayer>
   </legend>
-  <Composer title="italia" visible="1">
+  <Composer title="italia" visible="0">
     <Composition gridVisible="0" printResolution="300" paperWidth="190" snapGridOffsetX="0" guidesVisible="1" snapGridResolution="10" snapGridOffsetY="0" alignmentSnap="1" snapping="0" snapTolerancePixels="5" numPages="1" paperHeight="170" smartGuides="1" printAsRaster="0" generateWorldFile="0">
       <symbol alpha="1" clip_to_extent="1" type="fill" name="">
         <layer pass="0" class="SimpleFill" locked="0">
