@@ -1,0 +1,167 @@
+<!doctype html>
+
+<html>
+  <head>
+    <title>Gruppo degli utenti italiani di QGIS</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+    <link href='http://fonts.googleapis.com/css?family=Lato:900,100' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script type="text/javascript" src="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+    <script>
+      $(function(){
+        // bind change event to select
+        $('#other_groups').bind('change', function () {
+            var url = $(this).val(); // get selected value
+            if (url) { // require a URL
+                window.location = url; // redirect
+            }
+            return false;
+        });
+      });
+    </script>
+  </head>
+
+  <body>
+    <!-- QGIS.org NAVBAR -->
+    <div class="navbar navbar-default" role="navigation">
+      <div class="container-fluid">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="http://qgis.org"></a>
+        </div>
+        <div class="collapse navbar-collapse" id="nav-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="http://qgis.org/it/site/about/index.html">Scopri QGIS</a></li>
+            <li><a href="http://qgis.org/it/site/forusers/index.html">Per gli utenti</a></li>
+            <li><a href="http://qgis.org/it/site/getinvolved/index.html">Partecipa</a></li>
+            <li><a href="http://qgis.org/it/docs/index.html">Documentazione</a></li>
+            <li class="navbar-dropdown">
+              <div class="select-dropdown">
+              <select id="other_groups">
+                <option value="" title="none">Altri gruppi utenti QGIS</option>
+                <optgroup label="America">
+                  <option title="USA" value="http://qgis.us/">U.S.A.</option>
+                </optgroup>
+                <optgroup label="Europa">
+                  <option title="UK" value="http://qgis.uk/">Gran Bretagna</option>
+                  <option title="IE" value="https://ieqgis.wordpress.com/category/qgis/">Irlanda</option>
+                  <option title="Olanda" value="http://www.qgis.nl/">Olanda</option>
+                  <option title="Portogallo" value="http://qgis.pt/">Portogallo</option>
+                  <option title="Svizzera" value="http://qgis.ch">Svizzera</option>
+                <optgroup label="Oceania">
+                  <option title="ANZ" value="https://sites.google.com/site/ausqgis/home">Australia &amp; NZ</option>
+                </optgroup>
+              </select>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- TITLE & PAGE NAV -->
+    <div class="container">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 page-title"><a href="http://qgis.it">Gruppo degli utenti italiani di QGIS</a></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 col-md-6 col-md-offset-3">
+            <ul class="page-nav">
+              <li>
+                <a href="http://qgis.it/#about">Obiettivi</a>
+              </li>
+              <li>
+                <a href="http://qgis.it#meetings">Partecipa</a>
+              </li>
+              <li>
+                <a href="http://qgis.it#cooperate">Collabora</a>
+              </li>
+              <li>
+                <a href="http://qgis.it#support">Sostieni</a>
+              </li>
+              <li>
+                <a href="http://qgis.it#translation">Traduzioni</a>
+              </li>
+              <li>
+                <a href="http://qgis.it#contact">Contatti</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Traduzioni -->
+
+          <hr class="featurette-divider">
+          <a name="translation"></a>
+          <div class="featurette">
+          <h2>Istruzioni per la traduzione</h2>
+          <p class="lead">Tradurre QGIS &egrave; facile e veloce! <b>Tutte</b> le risorse di QGIS (manuali, sito web e interfaccia grafica) sono ospitate sulla piattaforma di localizzazione <a href="http://www.transifex.com"> Transifex</a>. <br>
+          Se vuoi unirti al gruppo dei traduttori sei il benvenuto! 
+          Il processo richiede pochissimo tempo:
+          <ul class="lead">
+              <li><b>prima</b> di iscriverti, presentati agli altri traduttori, spiegando chi sei e in quali argomenti sei particolarmente ferrato!</li>
+              <li>iscriviti <b>gratuitamente</b> su <a href="http://www.transifex.com"> Transifex</a> e cerca il progetto <b>qgis</b>. Vedrai <b>3 risorse</b>:
+              <ol>
+                  <li><b>QGIS Desktop</b>, ovvero l'interfaccia grafica di QGIS</li>
+                  <li><b>QGIS Documentation</b>, ovvero tutta la manualistica inerente QGIS</li>
+                  <li><b>QGIS Website</b>, il sito web di QGIS</li>
+              </ol>
+              segli il progetto a cui vuoi contribuire cliccandoci sopra
+              </li>
+              <li>l'amministratore vedr&agrave; la tua iscrizione e ti accetter&agrave; nel team dei traduttori</li>
+              <li>ogni progetto &egrave; composto da una a pi&ugrave; risorse (corrispondenti per esempio ai capitoli del manuale). Clicca sulla risorsa che vuoi tradurre e clicca su <b>translate</b>.</li>
+              <li>pronti, via! Traduci le stringhe che vuoi, Transifex salver&agrave; automaticamente le nuove stringhe tradotte</li>
+        </ul>
+        </p>
+        
+        <h2>Guida all'utilizzo di Transifex</h2>
+        <p class="lead">Con Transifex si possono tradurre molte stringhe in poco tempo. Tuttavia, ci sono delle linee guida per mantenere alta la qualit&agrave; della traduzione:
+        <ul class="lead">
+            <li>la barra di ricerca nella parte sinistra della finestra permette di filtrare rapidamente con diversi tipi di criteri. Imparare ad usarla &egrave; molto facile e utile</li>
+            <li>nella parte centrale in alto ci sono i numeri di quante stringhe sono tradotte (ALL), non tradotte (UNTRANSLATED) e revisionate (REVIEWED). Cliccando su <b>untranslated</b> si possono visualizzare solamente le stinghe da traurre</li>
+            <li>la parte <b>destra</b> &egrave; composta da diverse schede molto utili:
+            <ol>
+                <li><b>Suggestions</b> che mostra eventuali suggerimenti di stinghe tradotte in modo simile con la <b>percentuale di similarit&agrave;</b>. In questo modo si possono vedere subito stringhe simili al 99% e baster&agrave; quindi una minima modifica per completare la traduzione</li>
+                <li><b>History</b> che mostra lo storico delle traduzioni di quella stringa e permette di vedere l'evoluzione della traduzione</li>
+                <li><b>Glossary</b> mostra tutte le parole prensenti nel glossario e che compaiono nella stringa selezionata. Il glossario &egrave; una <b>risorsa fondamentale</b> da utilizzare per rendere la traduzione coerente</li>
+            </ol>
+            </li>
+            <li>nella parte in alto a destra &egrave; presente un pulsante <b>FONDAMENTALE</b> da utilizzare spesso: <b>Concordance search</b>. Questo pulsante cerca in <b>tutti</b> i progetti di QGIS come &egrave; stata tradotta una parola e mostra le varie concordanze. Questa risorsa &egrave; fondamentale per garantiere un'alta qualit&agrave; della traduzione e fare in modo che i termini siano tradotti in modo simile in tutti i progetti di QGIS</li>
+            <li>nella scheda centrale (dove si pu&ograve; inserire la traduzione della stringa) nella parte inferiore si possono vedere delle informazioni aggiuntive sulla stringa. A volte ci sono informazioni sul <b>contesto</b> della stringa e sul percorso. Se si hanno dubbi su come tradurre la stringa queste informazioni aggiuntive possono aiutare moltissimo</li>
+            <li>in generale, se si hanno dei dubbi <b>NON</b> tradurre, ma scrivere in lista dove possiamo discutere apertamente e trovare la traduzione migliore</li>
+        </ul>
+        </p>
+
+<p class="lead">Per qualsiasi informazione o dubbio <a href="mailto:traduzioni@qgis.it?subject=Info_traduzioni_qgis_sito">scrivici</a></p>
+
+    <!-- PAGE FOOTER -->
+    <footer class="footer">
+      <div class="container">
+        <ul id="social">
+        <!-- qualche social non ancora attivo
+          <li id="twitter"><a href="##local twitter account" class="external"><div></div></a></li>
+          <li id="facebook"><a href="##local facebook account" class="external"><div></div></a></li>
+          <li id="gplus"><a href="##local gplus account" class="external"><div></div></a></li>
+
+          <li id="github"><a href="http://github.com/qgis/" class="external"><div></div></a></li>
+
+          <li id="contact"><a href="mailto:info@qgis.it?subject=Info_req"><div></div></a></li>
+          -->
+        </ul>
+      </div>
+      <p class="footer credit">If not stated otherwise, all content is licensed under <a href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-ShareAlike 3.0 licence (CC BY-SA)</a></p>
+      <p class="footer credit">Select graphics from<a href="http://thenounproject.com"> The Noun Project</a></p>
+      <p class="footer credit">Sito realizzato grazie a <a href="http://faunalia.eu">Faunalia</a></p>
+    </footer>
+  </body>
+</html>
