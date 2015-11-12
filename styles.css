@@ -17,6 +17,11 @@ a:hover {
   margin-left: 10px;
 }
 
+.container-page {
+  margin-left: 10px;
+  margin-top: 80px;
+}
+
 .container-left {
   margin-right: 30%;
 }
@@ -30,8 +35,10 @@ hr {
 .navbar {
   height: 67px;
   background-color: #fff;
-  opacity: 0.85;
+  opacity: 1;
   border-bottom: 1px solid #0084c8;
+  width: 100%;
+  position: fixed;
 }
 
 .navbar-brand {
@@ -67,7 +74,7 @@ ul.nav.navbar-nav > li > a {
 select#other_groups {
   float: right;
   margin: 18px 1px 0 4px;
-  width: 168px;
+  width: 190px;
   background: #aaa url('images/down-arrow.png') no-repeat 95% 50%;
   line-height: 20px;
   color: white;
@@ -104,6 +111,7 @@ select#other_groups {
 ul.page-nav {
   margin-top: 15px;
   margin-left: 30px;
+  margin-top: 40px;
   display: inline-block;
   list-style: none;
   font-size: 1.2em;
