@@ -1,0 +1,402 @@
+<!doctype html>
+
+<html>
+  <head>
+    <title>Gruppo degli utenti italiani di QGIS</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+    <link href='http://fonts.googleapis.com/css?family=Lato:900,100' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script type="text/javascript" src="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+    <script>
+      $(function(){
+        // bind change event to select
+        $('#other_groups').bind('change', function () {
+            var url = $(this).val(); // get selected value
+            if (url) { // require a URL
+                window.location = url; // redirect
+            }
+            return false;
+        });
+      });
+    </script>
+  </head>
+
+  <body>
+    <!-- QGIS.org NAVBAR -->
+
+<!-- This is the old navbar, not static!-->
+<!-- <div class="navbar navbar-default" role="navigation"> -->
+
+<!--new navbar position: fixed on top -->
+    <div class="navbar navbar-fixed-top" role="navigation">
+      <div class="container-fluid">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="http://qgis.org/it/site/"></a>
+        </div>
+        <div class="collapse navbar-collapse" id="nav-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="http://qgis.org/it/site/about/index.html">Scopri QGIS</a></li>
+            <li><a href="http://qgis.org/it/site/forusers/index.html">Per gli utenti</a></li>
+            <li><a href="http://qgis.org/it/site/getinvolved/index.html">Partecipa</a></li>
+            <li><a href="http://qgis.org/it/docs/index.html">Documentazione</a></li>
+            <li><a href="http://qgis.it/traduzione.html">Traduzione</a></li>
+            <li class="navbar-dropdown">
+              <div class="select-dropdown">
+              <select id="other_groups">
+                <option value="" title="none">Altri gruppi utenti QGIS</option>
+                <optgroup label="America">
+                  <option title="USA" value="http://qgis.us/">U.S.A.</option>
+                </optgroup>
+                <optgroup label="Europa">
+                  <option title="UK" value="http://qgis.uk/">Gran Bretagna</option>
+                  <option title="IE" value="https://ieqgis.wordpress.com/category/qgis/">Irlanda</option>
+                  <option title="Olanda" value="http://www.qgis.nl/">Olanda</option>
+                  <option title="Portogallo" value="http://qgis.pt/">Portogallo</option>
+                  <option title="Svizzera" value="http://qgis.ch">Svizzera</option>
+                <optgroup label="Oceania">
+                  <option title="ANZ" value="https://sites.google.com/site/ausqgis/home">Australia &amp; NZ</option>
+                </optgroup>
+              </select>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- TITLE & PAGE NAV -->
+    <div class="container">
+      <div class="container-page">
+        <div class="row">
+          <div class="col-xs-12 page-title">Gruppo degli utenti italiani di QGIS</div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 col-md-8">
+            <ul class="page-nav">
+              <li>
+                <a href="#about">Obiettivi</a>
+              </li>
+              <li>
+                <a href="#meetings">Partecipa</a>
+              </li>
+              <li>
+                <a href="#cooperate">Collabora</a>
+              </li>
+              <li>
+                <a href="#support">Sostieni</a>
+              </li>
+              <li>
+                <a href="#processing-test">Processing Test</a>
+              </li>
+              <li>
+                <a href="#translation">Traduzioni</a>
+              </li>
+              <li>
+                <a href="#contact">Contatti</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+
+        <h2 class="featurette-heading">Come aggiungere un test per Processing in QGIS</h2>
+        <p class="lead">
+        Questo articolo nasce dopo aver discusso alla scorsa Hack Fest di Padova. Un sentito grazie a tutte le persone che hanno mostrato interesse all'argomento.
+        <br>
+        La guida ufficiale dell'architettura dei test &egrave; disponibile <a href="https://github.com/qgis/QGIS/tree/master/python/plugins/processing/tests">qui
+        </a></p>
+
+
+        <h3 class="featurette-heading">Come funzionano gli unit test</h3>
+        <p class="lead">
+          Gli unit test sono una parte di ogni programma (anche se non &egrave; proprio la parte pi&ugrave; interessante da scrivere) perch&egrave; permettono di scovare eventuali errori <strong>prima</strong> del rilascio di una versione del software.
+          <br>
+          Per intenderci meglio: uno sviluppatore cambia qualcosa in un algoritmo ma scrive male una stringa. Questo algoritmo <strong>non</strong> funzioner&agrave;.
+          <br>
+          Gli unit test servono proprio a <strong>prevenire</strong> questi errori.
+          <br>
+          La teoria &egrave; molto semplice. Un test lancia l'algoritmo e confronta questi output con dei risultati veri e che sono stati verificati.
+          <br>
+          Se l'output &egrave; diverso dal risultato attesto il test fallisce e si viene informati dell'errore (quale riga ha causato quale errore).
+        </p>
+
+        <h3 class="featurette-heading">Cosa sono gli unit test di Processing</h3>
+        <p class="lead">
+          Nel caso specifico di Processing gli output di un algoritmo (ovvero dei vettori o dei raster) vengono confrontati con layer verificati da chi ha creato il test. Se durante il confronto qualcosa non torna (layer &egrave; in una posizione diversa, dovrebbe essere un punto invece &egrave; una linea, non c'&egrave; proprio un risultato, ecc..) il test fallisce.
+          <br>
+          Il codice di QGIS &egrave; ospitato su <a href="https://github.com/">Github</a>. Il <em>motore</em> dei test &egrave; invece ospitato su <a href="https://travis-ci.org/">Travis</a>.
+          <br>
+          Detta in parole semplici: quando uno sviluppatore cambia qualcosa nel codice e manda le sue modifiche (chiamate <strong>commit</strong>) al codice sorgente, Travis inizia una vera e propria compilazione di QGIS in remoto.
+          <br>
+          Durante la compilazione vengono fatti girare i vari test e se qualcosa non va si capisce subito quale modifica ha causato l'errore.
+          <br>
+          Questo sistema di prevenzione ha un <strong>valore intrinseco immenso</strong> in quanto per tutti gli algoritmi (ma non solo, infatti ogni <em>pezzo</em> di QGIS pu&ograve; essere accompagnato da un test) di cui esiste un test si ha la garanzia che funzionino e che continuino a funzionare.
+        </p>
+
+
+
+        <h2 class="featurette-heading">Come si creano test per Processing</h2>
+        <p class="lead">
+        Tutti (ma proprio tutti) possono aggiungere dei test per Processing. Il processo &egrave; un po' macchinoso, ma ne vale la pena.
+        </p>
+
+
+        <h3 class="featurette-heading">Requisiti</h3>
+        <p class="lead">
+          L'architettura dei test necessita di alcuni software e accorgimenti, in particolare si appoggia interamente al software di controllo versioni <a href="https://git-scm.com/">git</a>. Oltre a git consiglio l'utilizzo di un editor di testo avanzato (non avanzatissimo per&ograve; ecco, non un blocco note).
+          <br>
+          Il flusso di lavoro, anche se complesso, &egrave; piuttosto lineare:
+          <ul class="lead">
+            <li>creazione account su <a href="https://github.com/">Github</a></li>
+            <li>fork del repository di QGIS sul proprio account. Questa operazione permette di avere una copia del codice di QGIS ma sul proprio account</li>
+            <li>clonazione della copia <em>forkata</em>. Ovvero copiare sulla macchina locale la copia personale di QGIS</li>
+            <li>utilizzare l'ultima versione di QGIS master</li>
+            <li>scegliere un algoritmo di cui non esiste ancora un test</li>
+            <li>lanciare l'algoritmo e verificare che il risultato sia corretto</li>
+            <li>copiare il test e i risultati in una particolare cartella di QGIS</li>
+            <li>inviare il test e i risultati dal computer locale alla pripria copia su github</li>
+            <li>fare una pull request, ovvero chiedere che le modifiche della proprio copia di QGIS vengano incorporate nel codice sorgente <em>vero</em></li>
+        </ul>
+        <p class="lead">
+          Ammetto che il tutto pu&ograve; spaventare, ma &egrave; pi&ugrave; lineare di quello che si pu&ograve; immaginare. Procediamo per punti.
+        </p>
+        <br>
+        </p>
+
+
+        <h4 class="featurette-heading-minus">0. scaricare e installare git sul proprio computer</h4>
+        <p class="lead">
+          La procedura &egrave; semplice anche per chi usa Windows. Rimando al sito ufficiale per tutte le informazioni <a href="https://git-scm.com/downloads">git</a>
+        </p>
+
+        <h4 class="featurette-heading-minus">1. creare un account su github</h4>
+        <p class="lead">
+          Anche in questo caso non c'&egrave; tanto da spiegare, si fa tutto dal sito di <a href="https://github.com/">Github</a>
+        </p>
+
+        <h4 class="featurette-heading-minus">2. Fare un <em>fork</em> di QGIS</h4>
+        <p class="lead">
+          Questa procedura viene interamente fatta dal sito di <a href="https://github.com/">Github</a>
+        </p>
+        <ul class="lead">
+          <li>cercare il repository di QGIS</li>
+        </ul>
+        <div class="figure">
+        <img src="images/processing_test/repo_qgis.png" width=60% height=60%>
+        </div>
+        <ul class="lead">
+          <li>cliccare sul pulsante <strong>fork</strong></li>
+        </ul>
+        <div class="figure">
+        <img src="images/processing_test/fork_qgis.png" width=60% height=60%>
+        <p class="caption">alt text</p>
+        </div>
+        <ul class="lead">
+          <li>a questo punto si avr&agrave; la copia <em>forkata</em> di QGIS sul proprio account di github</li>
+        </ul>
+        <div class="figure">
+        <img src="images/processing_test/forked_qgis.png" width=60% height=60%>
+        </div>
+
+
+        <h4 class="featurette-heading-minus">3. clonare il fork sul proprio computer</h4>
+        <p class="lead">
+          La procedura cambia a seconda del sistema operativo. Di seguito un esempio su una macchina Linux
+        </p>
+        <ul class="lead">
+          <li>
+            aprire un terminale e spostarsi nella cartella in cui si vuole clonare il repository forkato. Una volta scelta la cartella bisogna copiare l'url di github del fork...
+          </li>
+        </ul>
+        <div class="figure">
+        <img src="images/processing_test/copy_fork.png" width=60% height=60%>
+        </div>
+        <ul class="lead">
+          <li>
+            ... e incollarlo nel terminale con il seguente comando <code>git clone git@github.com:ghtmtt/QGIS.git</code>:
+          </li>
+        </ul>
+        <div class="figure">
+        <img src="images/processing_test/clone_fork.png" width=40% height=40%>
+        </div>
+        <p class="lead">
+          ora basta aspettare un po' (il repository di QGIS pesa poco pi&ugrave; di un GB) e si avr&agrave; una esatta copia locale su cui si potr&agrave; lavorare
+        </p>
+
+        <h4 class="featurette-heading-minus">4. Usare l'ultima versione di QGIS master</h4>
+        <p class="lead">
+        Anche se i test possono essere aggiunti per qualunque versione di QGIS il consiglio &egrave; quello di utilizzare l'ultima versione di QGIS disponibile.
+        </p>
+
+        <h4 class="featurette-heading-minus">5. Scegliere un algoritmo di cui ancora non esiste un test</h4>
+        <p class="lead">
+          Ci sono gi&agrave; diversi algoritmi di Processing che sono accompagnati da test. L'elenco di tutti i test gi&agrave; eseguiti &egrave; presente in un file <code>qgis_algorithm_tests.yaml</code>. Questo file si trova dentro il repository appena clonato, ovvero nella cartella: <code>QGIS/python/plugins/processing/tests/testdata</code>
+        </p>
+        <p class="lead">
+          Per vedere quali algoritmi hanno gi&agrave; un test si pu&ograve; aprire il file <code>qgis_algorithm_tests.yaml</code> cercare il nome <strong>inglese</strong> dell'algoritmo. Per esempio l'algoritmo <code>Densify geometries</code> ha gi&agrave; un test e lo si pu&ograve; trovare cercando <code>qgis:densifygeometries</code>:
+          <div class="figure">
+          <img src="images/processing_test/densify_test.png" width=40% height=40%>
+          </div>
+        </p>
+        <p class="lead">E&egrave; quindi <strong>fondamentale</strong> cercare <strong>prima</strong> gli algoritmi sprovvisti di test per evitare di creare dei doppioni.
+        </p>
+
+
+        <h4 class="featurette-heading-minus">6. Lanciare l'algoritmo e verificare che il risultato sia corretto</h4>
+        <p class="lead">
+          Tutta questa parte si svolte <strong>dentro</strong> QGIS.
+        </p>
+        <p class="lead">
+          L'architettura dei test &egrave; accompagnata da alcuni dati predefiniti da utilizzare. Se i dati forniti non dovessero essere adatti si possono tranquillamente aggiungere altri dati nel repository.
+        </p>
+        <p class="lead">
+          Questi dati (ed eventualmente anche dai creati ad hoc) sono nella cartella: <code>QGIS/QGIS/python/plugins/processing/tests/testdata/custom</code> del repository locale di QGIS.
+        </p>
+        <p class="lead">
+          Affinch&egrave; i test funzionino correttamente &egrave; <strong>fondamentale</strong> usare <strong>solamente</strong> dati presenti in questa cartella.
+          Quindi caricate i dati predefiniti in questa cartella e scegliete l'algoritmo che volete testare, in questo esempio l'algoritmo <code>Difference</code>:
+        </p>
+        <div class="figure">
+          <img src="images/processing_test/loading_data.png" width=80% height=80%>
+        </div>
+        <p class="lead">
+          Lanciare l'algoritmo e verificare che il risultato sia corretto.
+        </p>
+
+
+        <h4 class="featurette-heading-minus">7. Copiare il test e i risultati in una particolare cartella di QGIS</h4>
+        <p class="lead">
+          Se tutto si &egrave; svolto correttamente, il risultato deve essere salvato come file <strong>gml</strong> nella cartella <code>QGIS/QGIS/python/plugins/processing/tests/testdata/expected</code> del repository di QGIS:
+        </p>
+        <div class="figure">
+        <img src="images/processing_test/difference.png" width=60% height=60%>
+        </div>
+        <p class="lead">
+          Se avete lanciato l'algoritmo con i dati di input dalla cartella corretta e avete salvato il risultato nella cartella coerente, siete pronti per copiare una specifica stringa che l'architettura degli unit test ha creato.
+        </p>
+        <p class="lead">
+          Cliccate su Processing --&gt; Storico e Log e espandete il menu degli algoritmi. Il primo della lista &egrave; l'algoritmo pi&ugrave; recente che avete lanciato. Facendo click con il tasto denstro compare l'opzione <code>Create Test</code>:
+        </p>
+        <div class="figure">
+        <img src="images/processing_test/create_test.png" width=50% height=50%>
+        </div>
+        <p class="lead">
+          e si aprir&agrave; una nuova finestra con una stringa di testo:
+        </p>
+        <div class="figure">
+        <img src="images/processing_test/unit_test.png" width=50% height=50%>
+        </div>
+        <p class="lead">
+          Questa string va copiata e incollata in fondo al file <code>qgis_algorithm_tests.yaml</code> che si trova nella cartella <code>QGIS/python/plugins/processing/tests/testdata</code>.
+        </p>
+        <p class="lead">
+          State <strong>attenti</strong> all'indentazione, ovvero all'allineamento del testo copiato: deve essere perfettamente coerente con gli altri test.
+        </p>
+
+
+
+        <h4 class="featurette-heading-minus">8. Inviare il test e i risultati dal computer locale alla pripria copia su Github</h4>
+        <p class="lead">
+          Il test &egrave; pronto: avete infatti creato dei dati nuovi (il layer gml) e avete copiato la stringa dello unit test nel file corretto.
+        </p>
+        <p class="lead">
+          Il prossimo passaggio consiste nel sincronizzare la cartella locale del repository sul vostro computer con il repository <em>forkato</em> ovvero quello presente sull'vostro account di github.
+        </p>
+        <p class="lead">
+          Tutte queste procedure vengono fatte tramite <strong>git</strong>. Sul <a href="http://docs.qgis.org/2.18/en/docs/documentation_guidelines/first_contribution.html#using-git-command-line-tools">sito di QGIS</a> c'&egrave; un'ottima spiegazione (anche se riguarda la documentazione) di come utlizzare git. Il procedimento &egrave; esattemente lo stesso.
+        </p>
+        <p class="lead">
+          Di seguito un esempio per Linux. Aprite un terminale e spostatevi nella cartella del repository, nel seguente esempio la cartella &egrave; <code>QGIS</code>:
+        </p>
+        <div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash">  <span class="kw">cd</span> QGIS</code></pre></div>
+        <p class="lead">
+          potete verificare i cambiamenti che avete fatto con il comando <code>git status</code> che restituisce:
+        </p>
+        <div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash">
+          <span class="kw">git status</span>
+          <span class="kw">On branch master</span>
+          <span class="kw">Your branch is ahead of <span class="st">&#39;origin/master&#39;</span> by 104 commits.</span>
+          <span class="kw">(use</span> <span class="st">&quot;git push&quot;</span> to publish your local commits<span class="kw">)</span>
+          <span class="kw">Untracked</span> files:
+          <span class="kw">(use</span> <span class="st">&quot;git add &lt;file&gt;...&quot;</span> to include in what will be committed<span class="kw">)</span>
+          <span class="kw">python/plugins/processing/tests/testdata/expected/difference.gml</span>
+          <span class="kw">python/plugins/processing/tests/testdata/expected/difference.xsd</span>
+          <span class="kw">nothing</span> added to commit but untracked files present (use <span class="st">&quot;git add&quot;</span> to track)</code>
+        </pre></div>
+        <p class="lead">
+          Il consiglio &egrave; quello di <strong>NON</strong> usare il branch <code>master</code> ma di crearne uno vostro che potete sempre cancellare e aggiornare, ma di cui siete sicuri che non avr&agrave; alcun effetto sul branch principale. Il comando per creare un branch &egrave; il seguente:
+        </p>
+        <div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash">  <span class="kw">git</span> checkout -b processing_test_difference</code></pre></div>
+        <p class="lead">
+          dove <code>processing_test_difference</code> &egrave; il nome del branch che potete modificare come volete.
+        </p>
+        <p class="lead">
+          Aggiungete i file con il comando <code>git add .</code> accompagnato in un secondo momento dal comando <code>git commit -m &quot;test for difference algorithm added&quot;</code> dove fra <code>&quot;&quot;</code> dovete specificare il messaggio di cosa avete fatto:
+        </p>
+        <div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash">
+          <span class="kw">git add .</span>
+          <span class="kw">git commit -m</span>
+          <span class="st">&quot;test for difference algorithm added&quot;</span>
+          <span class="kw">prova</span> f3fcde1 test for difference algorithm added
+          <span class="kw">2</span> files changed, 47 insertions(+)
+          <span class="kw">create</span> mode 100644 python/plugins/processing/tests/testdata/expected/difference.gml
+          <span class="kw">create</span> mode 100644 python/plugins/processing/tests/testdata/expected/difference.xsd</code>
+         </pre>
+       </div>
+        <p class="lead">
+          a questo punto per sincronizzare il repository locale con quello del vostro account su github lanciate il comando:
+        </p>
+        <div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash">  <span class="kw">git</span> push origin processing_test_difference</code></pre></div>
+        <p class="lead">
+          Quindi state inviando le modifiche del branch processing_test_difference al branch origin che &egrave; il nome predefinito del repository di github.
+        </p>
+
+        <h4 class="featurette-heading-minus">9. Fare una pull request, ovvero chiedere che le modifiche della proprio copia di QGIS vengano incorporate nel codice sorgente <em>vero</em></h4>
+        <p class="lead">
+          Sul vostro repository di github vedrete un messaggio del genere:
+        </p>
+        <div class="figure">
+        <img src="images/processing_test/push_origin.png" width=60% height=60%>
+        </div>
+        <p class="lead">
+          cliccando sul pulsante <code>Compare &amp; pull request</code> potete chiedere che le modifiche del vostro repository vengano mandate anche al repository originale di QGIS. Compilate con cura i vari campi. importante &egrave; che le modifiche del vostro branch siano mandate al branch master di QGIS e che il titolo della Pull Request sia esplicativo. Questo permetter&agrave; agli sviluppatori di velocizzare la verifica delle modifiche:
+        </p>
+        <div class="figure">
+        <img src="images/processing_test/pull_request.png" width=80% height=80%>
+        </div>
+        <p class="lead">
+          Quando siete sicuri cliccate su <code>Create Pull Request</code>. Verrete reindirizzati all'elenco di tutte le Pull Request di QGIS dove potete vedere l'avanzamento della compilazione remota di QGIS e verificare che il procedimento sia stato effettuato correttamente:
+        </p>
+        <p class="lead">
+          Quando gli sviluppatori lo riterranno opportuno uniranno (tecnicamente faranno un <em>merge</em>) della vostra Pull Request e qull'algoritmo di QGIS sar&agrave; cosi blindato.
+        </p>
+
+
+<!-- PAGE FOOTER -->
+    <footer class="footer">
+      <div class="container">
+        <ul id="social">
+            <li id="facebook"><a href="https://www.facebook.com/qgis.it" class="external"><div></div></a></li>
+            <li id="github"><a href="http://github.com/qgis/" class="external"><div></div></a></li>
+            <li id="contact"><a href="mailto:info@qgis.it?subject=Info_sito"><div></div></a></li>
+        <!-- qualche social non ancora attivo
+          <li id="twitter"><a href="##local twitter account" class="external"><div></div></a></li>
+          <li id="gplus"><a href="##local gplus account" class="external"><div></div></a></li>
+          -->
+        </ul>
+      </div>
+      <p class="footer credit">If not stated otherwise, all content is licensed under <a href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-ShareAlike 3.0 licence (CC BY-SA)</a></p>
+      <p class="footer credit">Select graphics from<a href="http://thenounproject.com"> The Noun Project</a></p>
+    </footer>
+  </body>
+</html>
