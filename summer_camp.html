@@ -1,0 +1,174 @@
+<!doctype html>
+
+<html>
+  <head>
+    <title>Gruppo degli utenti italiani di QGIS</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+    <link href='http://fonts.googleapis.com/css?family=Lato:900,100' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script type="text/javascript" src="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+    <script>
+      $(function(){
+        // bind change event to select
+        $('#other_groups').bind('change', function () {
+            var url = $(this).val(); // get selected value
+            if (url) { // require a URL
+                window.location = url; // redirect
+            }
+            return false;
+        });
+      });
+    </script>
+  </head>
+
+  <body>
+    <!-- QGIS.org NAVBAR -->
+
+<!-- This is the old navbar, not static!-->
+<!-- <div class="navbar navbar-default" role="navigation"> -->
+
+<!--new navbar position: fixed on top -->
+    <div class="navbar navbar-fixed-top" role="navigation">
+      <div class="container-fluid">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="http://qgis.org/it/site/"></a>
+        </div>
+        <div class="collapse navbar-collapse" id="nav-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="http://qgis.org/it/site/about/index.html">Scopri QGIS</a></li>
+            <li><a href="http://qgis.org/it/site/forusers/index.html">Per gli utenti</a></li>
+            <li><a href="http://qgis.org/it/site/getinvolved/index.html">Partecipa</a></li>
+            <li><a href="http://qgis.org/it/docs/index.html">Documentazione</a></li>
+            <li><a href="http://qgis.it/traduzione.html">Traduzione</a></li>
+            <li class="navbar-dropdown">
+              <div class="select-dropdown">
+              <select id="other_groups">
+                <option value="" title="none">Altri gruppi utenti QGIS</option>
+                <optgroup label="America">
+                  <option title="USA" value="http://qgis.us/">U.S.A.</option>
+                </optgroup>
+                <optgroup label="Europa">
+                  <option title="UK" value="http://qgis.uk/">Gran Bretagna</option>
+                  <option title="IE" value="https://ieqgis.wordpress.com/category/qgis/">Irlanda</option>
+                  <option title="Olanda" value="http://www.qgis.nl/">Olanda</option>
+                  <option title="Portogallo" value="http://qgis.pt/">Portogallo</option>
+                  <option title="Svizzera" value="http://qgis.ch">Svizzera</option>
+                <optgroup label="Oceania">
+                  <option title="ANZ" value="https://sites.google.com/site/ausqgis/home">Australia &amp; NZ</option>
+                </optgroup>
+              </select>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- TITLE & PAGE NAV -->
+    <div class="container">
+      <div class="container-page">
+        <div class="row">
+          <div class="col-xs-12 page-title">Gruppo degli utenti italiani di QGIS</div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 col-md-8">
+            <ul class="page-nav">
+              <li>
+                <a href="http://qgis.it/#about">Obiettivi</a>
+              </li>
+              <li>
+                <a href="http://qgis.it/#meetings">Partecipa</a>
+              </li>
+              <li>
+                <a href="http://qgis.it/#cooperate">Collabora</a>
+              </li>
+              <li>
+                <a href="http://qgis.it/#support">Sostieni</a>
+              </li>
+              <li>
+                <a href="http://qgis.it/processing_tests.html">Processing Test</a>
+              </li>
+              <li>
+                <a href="http://qgis.it/#translation">Traduzioni</a>
+              </li>
+              <li>
+                <a href="http://qgis.it/#contact">Contatti</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <h2 class="featurette-heading">QGIS Summer Camp</h2>
+        <p class="lead">
+        Dal 5 al 7 luglio a Padova abbiamo organizzato il QGIS Summer Camp. Un'idea nata durante la ultima HackFest italiana di QGIS per avvicinare sempre pi&ugrave persone a questa fantastica comunit&agrave.
+        </p>
+        <iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=11.596412658691408%2C45.33452985298365%2C11.979560852050783%2C45.46253867087026&amp;layer=mapnik&amp;marker=45.39857051204202%2C11.787986755371094" style="border: 1px solid black"></iframe><br/><small><a href="https://www.openstreetmap.org/?mlat=45.3986&amp;mlon=11.7880#map=12/45.3986/11.7880">View Larger Map</a></small>
+
+        <h3>Quando</h3>
+        <p class="lead">
+        Dal venerd&igrave 5 a domenica 7 luglio 2019.
+        </p>
+
+        <h3>Dove</h3>
+        <p class="lead">
+        Nella stupenda citt&agrave di Padova. Il QGIS Summer Camp verr&agrave attrezzato presso la struttura..... qualche foto?
+        </p>
+
+        <h3>Programma</h3>
+        <p class="lead">
+        Durante queste giornate abbiamo organizzato diverse attivit&agrave:
+        </p>
+        <ul class="lead">
+            <li>Workshop su come partecipare alal comunit&agrave di QGIS:</li>
+              <ul>
+                <li>
+                    Come segnalare un bug. Segnalare un bug &egrave tanto importante quanto scroprirlo. Impara dai massimi esperti quali sono le migliori pratiche per segnalare un malfunzionamento per poterlo aggiustare in fretta
+                </li>
+                <li>
+                    Come si scrive la documentazione di QGIS? Mancano delle risorse? Ci sono parti del manuale che andrebbero migliorate? Fatti guidare dall'attuale coordinatore della documentazione di QGIS.ORG e impara a dare il tuo contributo!
+                </li>
+                <li>
+                    Dai una mano a tradurre l'interfaccia grafica, il manuale e il sito di QGIS. I migliori traduttori di QGIS saranno a disposizione per svelarti i trucchi del mestiere
+                </li>
+              </ul>
+            <li>Banchetto <i>Help Yourself</i>: esponi i tuoi problemi e gli esperti risponderanno</li>
+            <li>Conferenza utenti: una giornata (mezza?) dedicata al mondo di QGIS in tutte le sue forme</li>
+            <li><i>Show and tell</i>: hai fatto qualcosa che vorresti mostare al pubblico in maniera informale? Hai 3 minuti per sorprendere il pubblico e far vedere il tuo lavoro</li>
+        </ul>
+
+        <h3>Quote di partecipazione</h3>
+        <p class="lead">
+        <strong>Early booking:</strong>Chi prenota entro il 15 Aprile ci sono diversi vantaggi:
+          <ul class="lead">
+            <li>
+              80&euro; per 3 giorni compresi di attivit&agrave, vitto e alloggio;
+            </li>
+            <li>
+              60&euro; per 3 giorni compresi di attivit&agrave e vitto;
+            </li>
+            <li>
+              50&euro; per 3 giorni compresi di attivit&agrave, vitto e alloggio solo per <strong>studenti</strong> e <strong>accompagnatori</strong>;
+            </li>
+          </ul>
+        IBAN e altre info utili appena le abbiamo
+        </p>
+
+        <h3>Crediti extra</h3>
+        <p class="lead">
+        Durante le giornate potrai acquistare dei<strong>crediti aggiuntivi</strong>: con questi crediti avrai accesso ad attivit&agrave extra, bevande, gadget e tanto altro ancora.
+        </p>
+
+        <h3>Programma</h3>
+        <p class="lead">
+        Da inserire una tabella di massima con le giornate e il programma
+        </p>
