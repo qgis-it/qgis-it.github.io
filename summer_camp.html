@@ -1,0 +1,288 @@
+<!doctype html>
+
+<html>
+  <head>
+    <title>Gruppo degli utenti italiani di QGIS</title>
+    <meta name="viewport" content="width=device-width">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+    <link href='http://fonts.googleapis.com/css?family=Lato:900,100' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script type="text/javascript" src="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+
+    <script>
+      $(function(){
+        // bind change event to select
+        $('#other_groups').bind('change', function () {
+            var url = $(this).val(); // get selected value
+            if (url) { // require a URL
+                window.location = url; // redirect
+            }
+            return false;
+        });
+      });
+    </script>
+  </head>
+
+  <body>
+    <!-- QGIS.org NAVBAR -->
+
+<!-- This is the old navbar, not static!-->
+<!-- <div class="navbar navbar-default" role="navigation"> -->
+
+<!--new navbar position: fixed on top -->
+    <div class="navbar navbar-fixed-top" role="navigation">
+      <div class="container-fluid">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="http://qgis.org/it/site/"></a>
+        </div>
+        <div class="collapse navbar-collapse" id="nav-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="http://qgis.org/it/site/about/index.html">Scopri QGIS</a></li>
+            <li><a href="http://qgis.org/it/site/forusers/index.html">Per gli utenti</a></li>
+            <li><a href="http://qgis.org/it/site/getinvolved/index.html">Partecipa</a></li>
+            <li><a href="http://qgis.org/it/docs/index.html">Documentazione</a></li>
+            <li><a href="http://qgis.it/traduzione.html">Traduzione</a></li>
+            <li class="navbar-dropdown">
+              <div class="select-dropdown">
+              <select id="other_groups">
+                <option value="" title="none">Altri gruppi utenti QGIS</option>
+                <optgroup label="America">
+                  <option title="USA" value="http://qgis.us/">U.S.A.</option>
+                </optgroup>
+                <optgroup label="Europa">
+                  <option title="UK" value="http://qgis.uk/">Gran Bretagna</option>
+                  <option title="IE" value="https://ieqgis.wordpress.com/category/qgis/">Irlanda</option>
+                  <option title="Olanda" value="http://www.qgis.nl/">Olanda</option>
+                  <option title="Portogallo" value="http://qgis.pt/">Portogallo</option>
+                  <option title="Svizzera" value="http://qgis.ch">Svizzera</option>
+                <optgroup label="Oceania">
+                  <option title="ANZ" value="https://sites.google.com/site/ausqgis/home">Australia &amp; NZ</option>
+                </optgroup>
+              </select>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- TITLE & PAGE NAV -->
+    <div class="container">
+      <div class="container-page">
+        <div class="row">
+          <div class="col-xs-12 page-title">Gruppo degli utenti italiani di QGIS</div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 col-md-8">
+            <ul class="page-nav">
+              <li>
+                <a href="http://qgis.it/#about">Obiettivi</a>
+              </li>
+              <li>
+                <a href="http://qgis.it/#meetings">Partecipa</a>
+              </li>
+              <li>
+                <a href="http://qgis.it/#cooperate">Collabora</a>
+              </li>
+              <li>
+                <a href="http://qgis.it/#support">Sostieni</a>
+              </li>
+              <li>
+                <a href="http://qgis.it/processing_tests.html">Processing Test</a>
+              </li>
+              <li>
+                <a href="http://qgis.it/#translation">Traduzioni</a>
+              </li>
+              <li>
+                <a href="http://qgis.it/#contact">Contatti</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <h2 class="featurette-heading">QGIS Summer Camp</h2>
+        <p class="lead">
+          Dal 5 al 7 luglio 2019 a Padova ci sarà il primo QGIS Summer Camp, idea nata durante la ultima HackFest italiana di QGIS per avvicinare sempre più persone a questa fantastica comunità.
+        </p>
+
+
+        <div class="container">
+          <!-- Nav tabs -->
+          <ul class="nav nav-tabs" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" data-toggle="tab" href="#dove">Dove</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#programma">Programma</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#iscrizioni">Iscrizioni</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#crediti">Crediti</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#proponi">Proponi</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" data-toggle="tab" href="#sponsor">Sponsor</a>
+            </li>
+          </ul>
+
+          <!-- Tab panes -->
+          <div class="tab-content">
+            <div id="dove" class="container tab-pane active"><br>
+              <h3>Dove</h3>
+              <p class="lead">
+              Nella stupenda citt&agrave di Padova. Il QGIS Summer Camp si svolgerà presso la struttura del Parco Fenice, Lungargine Rovetta 28.
+              </p>
+          <iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=11.916689872741701%2C45.398664680408366%2C11.921512484550476%2C45.40040488357007&amp;layer=mapnik&amp;marker=45.39953442623485%2C11.919101178675191" style="border: 1px solid black"></iframe><br/><small><a href="https://www.openstreetmap.org/?mlat=45.39953&amp;mlon=11.91910#map=19/45.39953/11.91910">Visualizza mappa ingrandita</a></small>
+
+            </div>
+            <div id="programma" class="container tab-pane fade"><br>
+              <h3>Programma</h3>
+              <p class="lead">
+              Durante queste giornate abbiamo organizzato diverse attivit&agrave:
+              </p>
+              <ul class="lead">
+                  <li>Workshop su diverse modalità di partecipazione e contribuzione alla comunità QGIS:</li>
+                    <ul>
+                      <li>
+                        Come segnalare un bug. Segnalare un bug è tanto importante quanto scoprirlo. Impara quali sono le migliori pratiche per segnalare un malfunzionamento per poterlo aggiustare in fretta
+                      </li>
+                      <li>
+                          Come si scrive la documentazione di QGIS? Mancano delle risorse? Ci sono parti del manuale che andrebbero migliorate? Fatti guidare dall'attuale coordinatore della documentazione di QGIS.ORG e impara a dare il tuo contributo!
+                      </li>
+                      <li>
+                        Dai una mano a tradurre l'interfaccia grafica, il manuale e il sito di QGIS. I traduttori di QGIS saranno a disposizione per svelarti i trucchi del mestiere                      </li>
+                    </ul>
+                  <li>Banchetto <i>Help Yourself</i>: esponi i tuoi problemi e gli esperti risponderanno</li>
+                  <li>Conferenza utenti: una giornata (mezza?) dedicata al mondo di QGIS in tutte le sue forme</li>
+                  <li><i>Show and tell</i>: hai fatto qualcosa che vorresti mostare al pubblico in maniera informale? Hai 3 minuti per sorprendere il pubblico e far vedere il tuo lavoro</li>
+              </ul>
+              <div class="container">
+              <p>Programma indicativo del QGIS Summer Camp, se vuoi proporre contenuti <a href="https://github.com/qgis-it/qgis-it.github.io/wiki/QGIS-Italia:-primo-Summer-Camp">clicca qui</a></p>
+              <table class="table table-hover">
+                <thead>
+                  <tr>
+                    <th>Giorno</th>
+                    <th>Mattina</th>
+                    <th>Pomeriggio</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td> Venerdì 5</td>
+                    <td>Registrazione e inizio attività</td>
+                    <td>Divisioni in gruppi tematici</td>
+                  </tr>
+                  <tr>
+                    <td>Sabato 6</td>
+                    <td>Gruppi tematici ( +grigliata)</td>
+                    <td>Gruppi tematici</td>
+                  </tr>
+                  <tr>
+                    <td>Domenica 7</td>
+                    <td>Plenaria</td>
+                    <td>Sistemazione spazi</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            </div>
+            <div id="iscrizioni" class="container tab-pane fade"><br>
+              <h3>Iscrizioni e quota di partecipazione</h3>
+              <p class="lead">
+                  <br>
+              <strong>Early booking - </strong>Per chi si iscrive entro il 3 maggio ci sono molti vantaggi:
+                <ul class="lead">
+                  <li>
+                    90&euro; per i 3 giorni compresi di attività, vitto, alloggio e 6 crediti;
+                  </li>
+                  <li>
+                    75&euro; per 3 giorni compresi di attivit&agrave e vitto e 4 crediti;
+                  </li>
+                  <li>
+                    60&euro; per 3 giorni compresi di attivit&agrave, vitto e alloggio solo per <strong>studenti</strong> e <strong>accompagnatori</strong> e 4 crediti;
+                  </li>
+                </ul>
+
+              Dopo il 3 maggio le quote saranno, rispettivamente di 110€, 95€ e  80€.
+              </p>
+            </br>
+              <h3>Pagamento</h3>
+              <p class="lead">
+                <br>
+                  Bonifico Bancario: <strong> IT29 C033 5901 6001 0000 0156 540</strong> intestato ad Associazione GISHub  <br>
+                  Causale: <strong>ISCRIZIONE QGIS SUMMERCAMP NOME-COGNOME</strong><br>
+                  inviare la ricevuta dell'avvenuto bonifico a summercamp@qgis.it<br>
+                  <strong>PAYPAL </strong>attraverso l’apposito bottone.</p> <br>
+                  <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                    <input type="hidden" name="cmd" value="_s-xclick">
+                    <input type="hidden" name="hosted_button_id" value="MAN4DLEZRUTDC">
+                    <table>
+                    <tr><td><input type="hidden" name="on0" value="QGIS Summer Camp">QGIS Summer Camp</td></tr><tr><td><select name="os0">
+                      <option value="3 giorni con pernotto">3 giorni con pernotto €90,00 EUR</option>
+                      <option value="3 giorni senza pernotto">3 giorni senza pernotto €75,00 EUR</option>
+                      <option value="3 giorni con pernotto - studenti">3 giorni con pernotto - studenti €60,00 EUR</option>
+                    </select> </td></tr>
+                    </table>
+                    <input type="hidden" name="currency_code" value="EUR">
+                    <input type="image" src="https://www.paypalobjects.com/it_IT/IT/i/btn/btn_buynow_LG.gif" border="0" name="submit" alt="PayPal è il metodo rapido e sicuro per pagare e farsi pagare online.">
+                    <img alt="" border="0" src="https://www.paypalobjects.com/it_IT/i/scr/pixel.gif" width="1" height="1">
+                    </form>
+                                    
+                  
+                  <br>
+                  <p>
+                  La gestione delle iscrizioni è a cura dell'associazione GISHub. Il QGIS Summer Camps è organizzato da volontari. Tolti i costi (affitto strutture, cibo, materiali, ecc.), tutto il rimanente sarà devoluto al progetto QGIS.
+                  
+
+                     </p>
+
+                   <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc8oxKMs167OFGX5nXb9eJ37vUtzTYqVY8IbpDJVTpNJLONyg/viewform?embedded=true" width="640" height="1289" frameborder="0" marginheight="0" marginwidth="0">Caricamento in corso...</iframe>
+
+            </div>
+            <div id="crediti" class="container tab-pane fade"><br>
+              <h3>Crediti</h3>
+              <p class="lead">
+                  Con l'iscrizione si acquisiscono anche dei <strong>crediti</strong>, che  sono la moneta che potrai usare all'interno del QCamp per avere servizi extra, come rifornimenti di birra, acquistare gadget o consulenze con gli esperti che saranno presenti. 
+                  Un esempio? Hai un problema con un tuo progetto personale e hai bisogno della consulenza di un mago di QGIS? Evvene, puoi prenotare la consulenza e pagarla, simbolicamente, con i crediti. 
+                  Durante le giornate potrai acquistare tutti i <strong>crediti aggiuntivi</strong> che vuoi. <i>1 credito = 2.5€</i>
+                  
+
+              </p>
+            </div>
+            <div id="proponi" class="container tab-pane fade"><br>
+              <h3>Proponi</h3>
+              <p>Se vuoi proporre altre attività all'interno del QGIS Summer Camp contattaci all'indirizzo summercamp@qgis.it oppure aggiorna la pagina gitHub dell'evento <a href="https://github.com/qgis-it/qgis-it.github.io/wiki/QGIS-Italia:-primo-Summer-Camp">GitHub Summercamp</a>.</p>
+            </div>
+            <div id="sponsor" class="container tab-pane fade"><br>
+              <h3>Sponsor</h3>
+              <p>
+                <ul><li>
+                  Associazione GIShub
+                </li>
+              <li>Associazione Gfoss.it</li>
+            </ul>
+          Vuoi essere anche tu uno sponsor? scrivi a summercamp@qgis.it
+          
+          </p>
+            </div>
+
+
+          </div>
+        </div>
