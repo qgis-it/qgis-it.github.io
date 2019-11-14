@@ -1,0 +1,981 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>QGIS Summercamp</title>
+
+  <!-- Font Awesome Icons -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+ 
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
+
+  <!-- Plugin CSS -->
+  <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+  <!-- Theme CSS - Includes Bootstrap -->
+  <link href="css/creative.min.css" rel="stylesheet">
+  <link href="css/override.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top"> <img src="img/logo.png" style="height: 30px"> QGIS Summercamp 2019</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto my-2 my-lg-0">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#about">Summercamp</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#services">Cosa si fa?</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#portfolio">Cartoline</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#team">Chi siamo?</a>
+            </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#contact">Seguici</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Masthead -->
+  <header class="masthead">
+    <div class="container h-100">
+      <div class="row h-100 align-items-center justify-content-center text-center">
+        <div class="col-lg-10 align-self-end">
+          <h1 class="text-uppercase text-white font-weight-bold">QGIS Summercamp: condivisione, scoperta, libertà</h1>
+          <hr class="divider my-4">
+        </div>
+        <div class="col-lg-8 align-self-baseline">
+          <p class="text-white-75 font-weight-light mb-5">L'evento della comunità italiana di QGIS per conoscersi e far vedere che ogni utente, dallo studente al professionista, dal programmatore esperto al neofita, può contribuire al progetto di GIS più libero del mondo!</p>
+          <a class="btn btn-primary btn-xl js-scroll-trigger" style="background-color: #f4623a!important" href="#about">Scopri di più!</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section class="page-section bg-primary" id="about">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 text-center">
+          <h2 class="text-white mt-0">Tre giorni, trenta partecipanti, un solo software!</h2>
+          <hr class="divider light my-4">
+          <p class="text-white-50 mb-4">Il QGIS Summer Camp, come tutti gli eventi di QGIS Italia (Hackfest, etc.), è un momento per conoscere chi usa QGIS, per condividere esperienze e contribuire allo sviluppo di QGIS. Non serve essere uno sviluppatore, i nostri eventi sono ì trasversali, per tutti e soprattutto liberi.</p>
+          <a class="btn btn-light btn-xl js-scroll-trigger" href="http://qgis.it/" target="_blank">QGIS Italia</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="page-section" id="services">
+    <div class="container">
+      <h2 class="text-center mt-0">Cosa si fa?</h2>
+      <hr class="divider my-4">
+      <div class="row">
+        <div class="col-lg-3 col-md-6 text-center">
+          <div class="mt-5">
+            <i class="fas fa-4x  fa-users text-primary mb-4"></i>
+            <h3 class="h4 mb-2">Comunità</h3>
+            <p class="text-muted mb-0">Conoscere chi usa, sviluppa e promuove QGIS. Siamo tutte persone "normali"!</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 text-center">
+          <div class="mt-5">
+            <i class="fas fa-4x fa-laptop-code text-primary mb-4"></i>
+            <h3 class="h4 mb-2">Codice</h3>
+            <p class="text-muted mb-0">Risolvere bug, implementare funzioni e plugin o conoscere a chi si può chiedere. </p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 text-center">
+          <div class="mt-5">
+            <i class="fas fa-4x fa-language text-primary mb-4"></i>
+            <h3 class="h4 mb-2">Traduzione e Documentazione</h3>
+            <p class="text-muted mb-0">Come si traduce QGIS? Come aiutare per la documentazione</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 text-center">
+          <div class="mt-5">
+            <i class="fas fa-4x fa-heart text-primary mb-4"></i>
+            <h3 class="h4 mb-2">Made with Love</h3>
+            <p class="text-muted mb-0">Un evento libero, dove sentirsi a proprio agio, conoscere professionisti, sviluppatori e simpatizzanti. L'importante è metterci il cuore</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section id="portfolio">
+    <div class="container-fluid p-0">
+      <div class="row no-gutters">
+        <div class="col-lg-4 col-sm-6">
+          <a class="portfolio-box" href="img/portfolio/fullsize/1.jpg">
+            <img class="img-fluid" src="img/portfolio/thumbnails/1.jpg" alt="">
+            <div class="portfolio-box-caption">
+              <div class="project-category text-white-50">
+                Dove
+              </div>
+              <div class="project-name">
+                Parco Fenice: Padova...ma se hai altre proposte fatti sotto
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <a class="portfolio-box" href="img/portfolio/fullsize/2.jpg">
+            <img class="img-fluid" src="img/portfolio/thumbnails/2.jpg" alt="">
+            <div class="portfolio-box-caption">
+              <div class="project-category text-white-50">
+                La Comunità
+              </div>
+              <div class="project-name">
+                Siamo tutti parte di QGIS
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <a class="portfolio-box" href="img/portfolio/fullsize/3.jpg">
+            <img class="img-fluid" src="img/portfolio/thumbnails/3.jpg" alt="">
+            <div class="portfolio-box-caption">
+              <div class="project-category text-white-50">
+                Condivisione
+              </div>
+              <div class="project-name">
+                Ogni partecipante può far vedere ed insegnare i trucchi e le cose che sa fare meglio
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <a class="portfolio-box" href="img/portfolio/fullsize/4.jpg">
+            <img class="img-fluid" src="img/portfolio/thumbnails/4.jpg" alt="">
+            <div class="portfolio-box-caption">
+              <div class="project-category text-white-50">
+                Amicizia
+              </div>
+              <div class="project-name">
+                Alla fine siamo un gruppo di amici
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <a class="portfolio-box" href="img/portfolio/fullsize/5.jpg">
+            <img class="img-fluid" src="img/portfolio/thumbnails/5.jpg" alt="">
+            <div class="portfolio-box-caption">
+              <div class="project-category text-white-50">
+                Workshop
+              </div>
+              <div class="project-name">
+                Workshop tematici per imparare ad usare nuove funzionalità
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <a class="portfolio-box" href="img/portfolio/fullsize/6.jpg">
+            <img class="img-fluid" src="img/portfolio/thumbnails/6.jpg" alt="">
+            <div class="portfolio-box-caption p-3">
+              <div class="project-category text-white-50">
+                Riconoscimenti
+              </div>
+              <div class="project-name">
+                E' solo un pezzo di carta... per ora
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action Section -->
+  <!-- <section class="page-section bg-dark text-white">
+    <div class="container text-center">
+      <h2 class="mb-4">Free Download at Start Bootstrap!</h2> -->
+      <!-- <a class="btn btn-light btn-xl" href="https://startbootstrap.com/themes/creative/">Download Now!</a> -->
+    <!-- </div>  </section> -->
+
+
+<!-- Team -->
+<section id="team" class="page-section bg-dark text-white">
+  <div class="container">
+      <h5 class="section-title h1"></h5>
+      <div class="row">
+          <!-- Team member -->
+          <div class="col-xs-12 col-sm-6 col-md-4">
+              <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                  <div class="mainflip">
+                      <div class="frontside">
+                          <div class="card">
+                              <div class="card-body text-center">
+                                  <p><img class=" img-fluid" src="img/partecipanti/matteo.jpg" alt="card image"></p>
+                                  <h4 class="card-title">Matteo Ghetta</h4>
+                                  <p class="card-text" style="color:#007b5e">QGIS Italia</p>
+                                  <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="backside">
+                          <div class="card">
+                              <div class="card-body text-center mt-4">
+                                  <h4 class="card-title">Successo</h4>
+                                  <p class="card-text" style="color:#007b5e">Il QGIS Summer camp è stato un grande successo. Sia dal punto di vista organizzativo, della location e dei tempi, sia per i contenuti e le idee che sono uscite.</p>
+                                  <ul class="list-inline">
+                                      <li class="list-inline-item">
+                                          <a class="social-icon text-xs-center" target="_blank" href="#">
+                                              <i class="fa fa-facebook"></i>
+                                          </a>
+                                      </li>
+                                      <li class="list-inline-item">
+                                          <a class="social-icon text-xs-center" target="_blank" href="#">
+                                              <i class="fa fa-twitter"></i>
+                                          </a>
+                                      </li>
+                                      </ul>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <!-- ./Team member -->
+
+  <!-- Team member -->
+  <div class="col-xs-12 col-sm-6 col-md-4">
+    <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+        <div class="mainflip">
+            <div class="frontside">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <p><img class=" img-fluid" src="img/partecipanti/fede.jpg" alt="card image"></p>
+                        <h4 class="card-title">Federico Gianoli</h4>
+                        <p class="card-text" style="color:#007b5e">GIS Hub</p>
+                        <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="backside">
+                <div class="card">
+                    <div class="card-body text-center mt-4">
+                        <h4 class="card-title">Condivisione</h4>
+                        <p class="card-text" style="color:#007b5e">Siamo riusciti a creare un clima sereno e di condivisione. Ci siamo scambiati idee, trucchi e consigli per avere il software GIS migliore del mondo.</p>
+                        <ul class="list-inline">
+                            <li class="list-inline-item">
+                                <a class="social-icon text-xs-center" target="_blank" href="#">
+                                    <i class="fa fa-facebook"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="social-icon text-xs-center" target="_blank" href="#">
+                                    <i class="fa fa-twitter"></i>
+                                </a>
+                            </li>
+                            </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ./Team member -->
+
+
+          <!-- Team member -->
+  <div class="col-xs-12 col-sm-6 col-md-4">
+    <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+        <div class="mainflip">
+            <div class="frontside">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <p><img class=" img-fluid" src="img/partecipanti/rossella.jpg" alt="card image"></p>
+                        <h4 class="card-title">Rossella Di Bari</h4>
+                        <p class="card-text" style="color:#007b5e">QGIS Italia</p>
+                        <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="backside">
+                <div class="card">
+                    <div class="card-body text-center mt-4">
+                        <h4 class="card-title">Inclusione</h4>
+                        <p class="card-text" style="color:#007b5e"> 
+                          <b>trasversale</b>:coinvolge qualunque profilo professionale a qualsiasi livello di competenza<br>
+                          <b>libero</b>:in grado di rispondere a esigenze specifiche o di mantenere un carattere più generale<br>
+                          <b>stimolante</b>:per la poliedricità delle persone che si mettono in gioco con professionalità, impegno e passione<br>
+                          <b>inclusivo</b>:ambiente dove non si ha timore di confrontarsi</p>
+                        <ul class="list-inline">
+                            <li class="list-inline-item">
+                                <a class="social-icon text-xs-center" target="_blank" href="#">
+                                    <i class="fa fa-facebook"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="social-icon text-xs-center" target="_blank" href="#">
+                                    <i class="fa fa-twitter"></i>
+                                </a>
+                            </li>
+                            </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ./Team member -->
+
+         <!-- Team member -->
+  <div class="col-xs-12 col-sm-6 col-md-4">
+    <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+        <div class="mainflip">
+            <div class="frontside">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <p><img class=" img-fluid" src="img/partecipanti/paolo.jpg" alt="card image"></p>
+                        <h4 class="card-title">Paolo Cavallini</h4>
+                        <p class="card-text" style="color:#007b5e">Chair QGIS.org</p>
+                        <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="backside">
+                <div class="card">
+                    <div class="card-body text-center mt-4">
+                        <h4 class="card-title">Condivisione</h4>
+                        <p class="card-text" style="color:#007b5e">Siamo riusciti a creare un clima sereno e di condivisione. Ci siamo scambiati idee, trucchi e consigli per avere il software GIS migliore del mondo.</p>
+                        <ul class="list-inline">
+                            <li class="list-inline-item">
+                                <a class="social-icon text-xs-center" target="_blank" href="#">
+                                    <i class="fa fa-facebook"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="social-icon text-xs-center" target="_blank" href="#">
+                                    <i class="fa fa-twitter"></i>
+                                </a>
+                            </li>
+                            </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ./Team member -->
+<!-- Team member -->
+<div class="col-xs-12 col-sm-6 col-md-4">
+  <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+      <div class="mainflip">
+          <div class="frontside">
+              <div class="card">
+                  <div class="card-body text-center">
+                      <p><img class=" img-fluid" src="img/partecipanti/claudia.jpg" alt="card image"></p>
+                      <h4 class="card-title">Claudia Soccorsi</h4>
+                      <p class="card-text" style="color:#007b5e">QGIS Italia</p>
+                      <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                  </div>
+              </div>
+          </div>
+          <div class="backside">
+              <div class="card">
+                  <div class="card-body text-center mt-4">
+                      <h4 class="card-title">Entusiasmo</h4>
+                      <p class="card-text" style="color:#007b5e">Grazie a tutto il team QGIS Italia sviluppatori e non, per averci accolte e fatte sentire a casa, per averci trasmesso il vostro entusiasmo, la voglia di migliorare sempre ma soprattutto l’importanza del team working. </p>
+                      <ul class="list-inline">
+                          <li class="list-inline-item">
+                              <a class="social-icon text-xs-center" target="_blank" href="#">
+                                  <i class="fa fa-facebook"></i>
+                              </a>
+                          </li>
+                          <li class="list-inline-item">
+                              <a class="social-icon text-xs-center" target="_blank" href="#">
+                                  <i class="fa fa-twitter"></i>
+                              </a>
+                          </li>
+                          </ul>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+<!-- ./Team member -->
+<!-- Team member -->
+<div class="col-xs-12 col-sm-6 col-md-4">
+  <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+      <div class="mainflip">
+          <div class="frontside">
+              <div class="card">
+                  <div class="card-body text-center">
+                      <p><img class=" img-fluid" src="img/partecipanti/muttley.jpeg" alt="card image"></p>
+                      <h4 class="card-title">Muttley</h4>
+                      <p class="card-text" style="color:#007b5e">QGIS Italia</p>
+                      <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                  </div>
+              </div>
+          </div>
+          <div class="backside">
+              <div class="card">
+                  <div class="card-body text-center mt-4">
+                      <h4 class="card-title">Paradiso</h4>
+                      <p class="card-text" style="color:#007b5e">Ho potuto stare libero tutto il tempo sotto gli alberi. Il posto è davvero bello!</p>
+                      <ul class="list-inline">
+                          <li class="list-inline-item">
+                              <a class="social-icon text-xs-center" target="_blank" href="#">
+                                  <i class="fa fa-facebook"></i>
+                              </a>
+                          </li>
+                          <li class="list-inline-item">
+                              <a class="social-icon text-xs-center" target="_blank" href="#">
+                                  <i class="fa fa-twitter"></i>
+                              </a>
+                          </li>
+                          </ul>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+<!-- ./Team member -->
+<!-- Team member -->
+<div class="col-xs-12 col-sm-6 col-md-4">
+  <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+      <div class="mainflip">
+          <div class="frontside">
+              <div class="card">
+                  <div class="card-body text-center">
+                      <p><img class=" img-fluid" src="img/partecipanti/enrico.jpg" alt="card image"></p>
+                      <h4 class="card-title">Enrico Ferreguti</h4>
+                      <p class="card-text" style="color:#007b5e">QGIS Italia</p>
+                      <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                  </div>
+              </div>
+          </div>
+          <div class="backside">
+              <div class="card">
+                  <div class="card-body text-center mt-4">
+                      <h4 class="card-title">Occasione</h4>
+                      <p class="card-text" style="color:#007b5e">QGIS Summercamp: Un occasione per arricchirsi incontrando persone non solo competenti e disponibili ma anche simpatiche ed accoglienti.</p>
+                      <ul class="list-inline">
+                          <li class="list-inline-item">
+                              <a class="social-icon text-xs-center" target="_blank" href="#">
+                                  <i class="fa fa-facebook"></i>
+                              </a>
+                          </li>
+                          <li class="list-inline-item">
+                              <a class="social-icon text-xs-center" target="_blank" href="#">
+                                  <i class="fa fa-twitter"></i>
+                              </a>
+                          </li>
+                          </ul>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+<!-- ./Team member -->
+<!-- Team member -->
+<div class="col-xs-12 col-sm-6 col-md-4">
+  <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+      <div class="mainflip">
+          <div class="frontside">
+              <div class="card">
+                  <div class="card-body text-center">
+                      <p><img class=" img-fluid" src="img/partecipanti/rocco.jpg" alt="card image"></p>
+                      <h4 class="card-title">Rocco Pispico</h4>
+                      <p class="card-text" style="color:#007b5e">Gfoss.it</p>
+                      <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                  </div>
+              </div>
+          </div>
+          <div class="backside">
+              <div class="card">
+                  <div class="card-body text-center mt-4">
+                      <h4 class="card-title">Condivisione</h4>
+                      <p class="card-text" style="color:#007b5e">Siamo riusciti a creare un clima sereno e di condivisione. Ci siamo scambiati idee, trucchi e consigli per avere il software GIS migliore del mondo.</p>
+                      <ul class="list-inline">
+                          <li class="list-inline-item">
+                              <a class="social-icon text-xs-center" target="_blank" href="#">
+                                  <i class="fa fa-facebook"></i>
+                              </a>
+                          </li>
+                          <li class="list-inline-item">
+                              <a class="social-icon text-xs-center" target="_blank" href="#">
+                                  <i class="fa fa-twitter"></i>
+                              </a>
+                          </li>
+                          </ul>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+<!-- ./Team member -->
+<!-- Team member -->
+<div class="col-xs-12 col-sm-6 col-md-4">
+  <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+      <div class="mainflip">
+          <div class="frontside">
+              <div class="card">
+                  <div class="card-body text-center">
+                      <p><img class=" img-fluid" src="img/partecipanti/toto.jpg" alt="card image"></p>
+                      <h4 class="card-title">Totò Fiandaca</h4>
+                      <p class="card-text" style="color:#007b5e">QGIS Italia</p>
+                      <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                  </div>
+              </div>
+          </div>
+          <div class="backside">
+              <div class="card">
+                  <div class="card-body text-center mt-4">
+                      <h4 class="card-title">Comunità</h4>
+                      <p class="card-text" style="color:#007b5e">La bontà di un software Open Source si misura attraverso la sua Comunità, tanto più è attiva e ampia tanto più è stabile e duraturo nel tempo. W QGIS e tutta la comunità internazionale.
+                        Grazie Gary Sherman, papà di QGIS!</p>
+                      <ul class="list-inline">
+                          <li class="list-inline-item">
+                              <a class="social-icon text-xs-center" target="_blank" href="#">
+                                  <i class="fa fa-facebook"></i>
+                              </a>
+                          </li>
+                          <li class="list-inline-item">
+                              <a class="social-icon text-xs-center" target="_blank" href="#">
+                                  <i class="fa fa-twitter"></i>
+                              </a>
+                          </li>
+                          </ul>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+<!-- ./Team member -->
+<!-- Team member -->
+<div class="col-xs-12 col-sm-6 col-md-4">
+  <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+      <div class="mainflip">
+          <div class="frontside">
+              <div class="card">
+                  <div class="card-body text-center">
+                      <p><img class=" img-fluid" src="img/partecipanti/stefano.jpg" alt="card image"></p>
+                      <h4 class="card-title">Stefano Campus</h4>
+                      <p class="card-text" style="color:#007b5e">Gfoss.it</p>
+                      <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                  </div>
+              </div>
+          </div>
+          <div class="backside">
+              <div class="card">
+                  <div class="card-body text-center mt-4">
+                      <h4 class="card-title">Pace</h4>
+                      <p class="card-text" style="color:#007b5e">Una tre giorni di pace, amore e QGIS all'insegna dell'informalità. Tutti hanno imparato qualcosa e dato molto di più. Missione compiuta!</p>
+                      <ul class="list-inline">
+                          <li class="list-inline-item">
+                              <a class="social-icon text-xs-center" target="_blank" href="https://www.facebook.com/stefano.campus.39">
+                                  <i class="fa fa-facebook"></i>
+                              </a>
+                          </li>
+                          <li class="list-inline-item">
+                              <a class="social-icon text-xs-center" target="_blank" href="https://twitter.com/skampus1967">
+                                  <i class="fa fa-twitter"></i>
+                              </a>
+                          </li>
+                          </ul>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+<!-- ./Team member -->
+<!-- Team member -->
+<div class="col-xs-12 col-sm-6 col-md-4">
+  <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+      <div class="mainflip">
+          <div class="frontside">
+              <div class="card">
+                  <div class="card-body text-center">
+                      <p><img class=" img-fluid" src="img/partecipanti/daniele.jpg" alt="card image"></p>
+                      <h4 class="card-title">Daniele Codato</h4>
+                      <p class="card-text" style="color:#007b5e">GIS Hub</p>
+                      <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                  </div>
+              </div>
+          </div>
+          <div class="backside">
+              <div class="card">
+                  <div class="card-body text-center mt-4">
+                      <h4 class="card-title">Condivisione</h4>
+                      <p class="card-text" style="color:#007b5e">Siamo riusciti a creare un clima sereno e di condivisione. Ci siamo scambiati idee, trucchi e consigli per avere il software GIS migliore del mondo.</p>
+                      <ul class="list-inline">
+                          <li class="list-inline-item">
+                              <a class="social-icon text-xs-center" target="_blank" href="#">
+                                  <i class="fa fa-facebook"></i>
+                              </a>
+                          </li>
+                          <li class="list-inline-item">
+                              <a class="social-icon text-xs-center" target="_blank" href="#">
+                                  <i class="fa fa-twitter"></i>
+                              </a>
+                          </li>
+                          </ul>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+<!-- ./Team member -->
+<!-- Team member -->
+<div class="col-xs-12 col-sm-6 col-md-4">
+  <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+      <div class="mainflip">
+          <div class="frontside">
+              <div class="card">
+                  <div class="card-body text-center">
+                      <p><img class=" img-fluid" src="img/partecipanti/simone.jpg" alt="card image"></p>
+                      <h4 class="card-title">Simone Parmeggiani</h4>
+                      <p class="card-text" style="color:#007b5e">QGIS Italia</p>
+                      <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                  </div>
+              </div>
+          </div>
+          <div class="backside">
+              <div class="card">
+                  <div class="card-body text-center mt-4">
+                      <h4 class="card-title">Condivisione</h4>
+                      <p class="card-text" style="color:#007b5e">Siamo riusciti a creare un clima sereno e di condivisione. Ci siamo scambiati idee, trucchi e consigli per avere il software GIS migliore del mondo.</p>
+                      <ul class="list-inline">
+                          <li class="list-inline-item">
+                              <a class="social-icon text-xs-center" target="_blank" href="#">
+                                  <i class="fa fa-facebook"></i>
+                              </a>
+                          </li>
+                          <li class="list-inline-item">
+                              <a class="social-icon text-xs-center" target="_blank" href="#">
+                                  <i class="fa fa-twitter"></i>
+                              </a>
+                          </li>
+                          </ul>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+<!-- ./Team member -->
+<!-- Team member -->
+<div class="col-xs-12 col-sm-6 col-md-4">
+  <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+      <div class="mainflip">
+          <div class="frontside">
+              <div class="card">
+                  <div class="card-body text-center">
+                      <p><img class=" img-fluid" src="img/partecipanti/alberto.jpg" alt="card image"></p>
+                      <h4 class="card-title">Alberto Grava</h4>
+                      <p class="card-text" style="color:#007b5e">QGIS Italia</p>
+                      <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                  </div>
+              </div>
+          </div>
+          <div class="backside">
+              <div class="card">
+                  <div class="card-body text-center mt-4">
+                      <h4 class="card-title">Sfide</h4>
+                      <p class="card-text" style="color:#007b5e">QGIS non è solo un software ma una prospettiva di condivisione e crescita attraverso lo scambio.</p>
+                      <ul class="list-inline">
+                          <li class="list-inline-item">
+                              <a class="social-icon text-xs-center" target="_blank" href="#">
+                                  <i class="fa fa-facebook"></i>
+                              </a>
+                          </li>
+                          <li class="list-inline-item">
+                              <a class="social-icon text-xs-center" target="_blank" href="#">
+                                  <i class="fa fa-twitter"></i>
+                              </a>
+                          </li>
+                          </ul>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+<!-- ./Team member -->
+<!-- Team member -->
+<div class="col-xs-12 col-sm-6 col-md-4">
+  <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+      <div class="mainflip">
+          <div class="frontside">
+              <div class="card">
+                  <div class="card-body text-center">
+                      <p><img class=" img-fluid" src="img/partecipanti/rebecca.jpg" alt="card image"></p>
+                      <h4 class="card-title">Rebecca Rinaldi</h4>
+                      <p class="card-text" style="color:#007b5e">QGIS Italia</p>
+                      <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                  </div>
+              </div>
+          </div>
+          <div class="backside">
+              <div class="card">
+                  <div class="card-body text-center mt-4">
+                      <h4 class="card-title">Formazione</h4>
+                      <p class="card-text" style="color:#007b5e">QGIS Summer Camp! Che dire esperienza formativa e divertente! Un'ottima opportunità, anche per meno esperti, per conoscere  professionisti e non ed imparare divertendosi. 
+                        Da rifare senz'altro!"</p>
+                      <ul class="list-inline">
+                          <li class="list-inline-item">
+                              <a class="social-icon text-xs-center" target="_blank" href="#">
+                                  <i class="fa fa-facebook"></i>
+                              </a>
+                          </li>
+                          <li class="list-inline-item">
+                              <a class="social-icon text-xs-center" target="_blank" href="#">
+                                  <i class="fa fa-twitter"></i>
+                              </a>
+                          </li>
+                          </ul>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+<!-- ./Team member -->
+<!-- Team member -->
+<div class="col-xs-12 col-sm-6 col-md-4">
+  <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+      <div class="mainflip">
+          <div class="frontside">
+              <div class="card">
+                  <div class="card-body text-center">
+                      <p><img class=" img-fluid" src="img/partecipanti/mario.jpg" alt="card image"></p>
+                      <h4 class="card-title">Mario Baranzini</h4>
+                      <p class="card-text" style="color:#007b5e">QGIS Svizzera</p>
+                      <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                  </div>
+              </div>
+          </div>
+          <div class="backside">
+              <div class="card">
+                  <div class="card-body text-center mt-4">
+                      <h4 class="card-title">Condivisione</h4>
+                      <p class="card-text" style="color:#007b5e">Il QGIS Summercamp rispecchia pienamente la filosofia <i>OpenSource</i>. Niente viene imposto dall'alto, ma tutti si danno da fare come possono per contribuire al successo di questo bellissimo evento.</p>
+                      <ul class="list-inline">
+                          <li class="list-inline-item">
+                              <a class="social-icon text-xs-center" target="_blank" href="#">
+                                  <i class="fa fa-facebook"></i>
+                              </a>
+                          </li>
+                          <li class="list-inline-item">
+                              <a class="social-icon text-xs-center" target="_blank" href="#">
+                                  <i class="fa fa-twitter"></i>
+                              </a>
+                          </li>
+                          </ul>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+<!-- ./Team member -->
+<!-- Team member -->
+<div class="col-xs-12 col-sm-6 col-md-4">
+  <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+      <div class="mainflip">
+          <div class="frontside">
+              <div class="card">
+                  <div class="card-body text-center">
+                      <p><img class=" img-fluid" src="img/partecipanti/annamaria.jpg" alt="card image"></p>
+                      <h4 class="card-title">Annamaria Amura</h4>
+                      <p class="card-text" style="color:#007b5e">QGIS Italia</p>
+                      <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                  </div>
+              </div>
+          </div>
+          <div class="backside">
+              <div class="card">
+                  <div class="card-body text-center mt-4">
+                      <h4 class="card-title">Sfide</h4>
+                      <p class="card-text" style="color:#007b5e">QGIS non è solo un software ma una prospettiva di condivisione e crescita attraverso lo scambio. È un baratto di conoscenze messe al servizio dell’utente, dal principiante all’avanzato. La comunità di QGIS mi ha supportato tanto sin dal primo momento, nonostante il mio uso insolito del software ha cercato di aiutarmi a superare nuove sfide!</p>
+                      <ul class="list-inline">
+                          <li class="list-inline-item">
+                              <a class="social-icon text-xs-center" target="_blank" href="#">
+                                  <i class="fa fa-facebook"></i>
+                              </a>
+                          </li>
+                          <li class="list-inline-item">
+                              <a class="social-icon text-xs-center" target="_blank" href="#">
+                                  <i class="fa fa-twitter"></i>
+                              </a>
+                          </li>
+                          </ul>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+<!-- ./Team member -->
+<!-- Team member -->
+<div class="col-xs-12 col-sm-6 col-md-4">
+  <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+      <div class="mainflip">
+          <div class="frontside">
+              <div class="card">
+                  <div class="card-body text-center">
+                      <p><img class=" img-fluid" src="img/partecipanti/mariavittoria.jpg" alt="card image"></p>
+                      <h4 class="card-title">Maria Vittoria Gabellini</h4>
+                      <p class="card-text" style="color:#007b5e">QGIS Italia</p>
+                      <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                  </div>
+              </div>
+          </div>
+          <div class="backside">
+              <div class="card">
+                  <div class="card-body text-center mt-4">
+                      <h4 class="card-title">Coinvolgimento</h4>
+                      <p class="card-text" style="color:#007b5e">Un'esperienza interessante e conivolgente dal primo all'ultimo minuto. Il clima informale ha permesso a tutti di sentirsi a casa, anche ai nuovi arrivati come me! Non vedo l'ora di mettere in pratica tutto quello che ho appreso</p>
+                      <ul class="list-inline">
+                          <li class="list-inline-item">
+                              <a class="social-icon text-xs-center" target="_blank" href="#">
+                                  <i class="fa fa-facebook"></i>
+                              </a>
+                          </li>
+                          <li class="list-inline-item">
+                              <a class="social-icon text-xs-center" target="_blank" href="#">
+                                  <i class="fa fa-twitter"></i>
+                              </a>
+                          </li>
+                          </ul>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+<!-- ./Team member -->
+<!-- Team member -->
+<div class="col-xs-12 col-sm-6 col-md-4">
+  <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+      <div class="mainflip">
+          <div class="frontside">
+              <div class="card">
+                  <div class="card-body text-center">
+                      <p><img class=" img-fluid" src="img/partecipanti/nicola.jpg" alt="card image"></p>
+                      <h4 class="card-title">Nicola Sottovia</h4>
+                      <p class="card-text" style="color:#007b5e">QGIS Italia</p>
+                      <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                  </div>
+              </div>
+          </div>
+          <div class="backside">
+              <div class="card">
+                  <div class="card-body text-center mt-4">
+                      <h4 class="card-title">Know-how</h4>
+                      <p class="card-text" style="color:#007b5e">E' stata un’esperienza entusiasmante. Mi sono confrontato con persone stimolanti che rendono vivo il mondo dell’open source. Il legame costruito in questi giorni rispecchia la predisposizione allo sharing dei know-how di chi voglia portare parte del proprio lavoro in aiuto degli altri.</p>
+                      <ul class="list-inline">
+                          <li class="list-inline-item">
+                              <a class="social-icon text-xs-center" target="_blank" href="#">
+                                  <i class="fa fa-facebook"></i>
+                              </a>
+                          </li>
+                          <li class="list-inline-item">
+                              <a class="social-icon text-xs-center" target="_blank" href="#">
+                                  <i class="fa fa-twitter"></i>
+                              </a>
+                          </li>
+                          </ul>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+<!-- ./Team member -->
+
+
+      </div>
+  </div>
+</section>
+<!-- Team -->
+
+
+
+
+    
+ 
+
+  <!-- Contact Section -->
+  <section class="page-section" id="contact">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 text-center">
+          <h2 class="mt-0">Seguici</h2>
+          <hr class="divider my-4">
+          <p class="text-muted mb-5">Puoi seguirci sui nostri canali social oppure entrare nella nostra mailing list. Cosa aspetti?</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 ml-auto text-center mb-5 mb-lg-0">
+          <i class="fa fa-facebook fa-3x mb-3 text-muted"></i>
+          <a class="d-block" href="https://www.facebook.com/qgis.it">QGIS Italia</a>
+
+          
+        </div>
+        <div class="col-lg-4 mr-auto text-center">
+          <i class="fa fa-envelope fa-3x mb-3 text-muted"></i>
+          <!-- Make sure to change the email address in anchor text AND the link below! -->
+          <a class="d-block" href="https://lists.osgeo.org/mailman/listinfo/qgis-it-user ">Mailing list</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-light py-5">
+    <div class="container">
+      <div class="small text-center text-muted">Copyright &copy; 2019 - QGIS Italia</div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+  <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/creative.min.js"></script>
+
+</body>
+
+</html>
