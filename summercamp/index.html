@@ -24,10 +24,38 @@
   <!-- Theme CSS - Includes Bootstrap -->
   <link href="css/creative.min.css" rel="stylesheet">
   <link href="css/override.css" rel="stylesheet">
+  <script src="vendor/jquery/jquery.min.js"></script>
+
+  <script type="text/javascript">
+    $(window).on('load',function(){
+        $('#avviso').modal('show');
+    });
+</script>
 
 </head>
 
 <body id="page-top">
+
+    <div id="avviso" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+      
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title">Cambio date Summercamp 2020</h4>
+            </div>
+            <div class="modal-body">
+              <p>A causa del COVID19, il Summercamp previsto per luglio viene spostato. Le nuove date sono 4-5-6 settembre 2020 sempre al Parco Fenice.
+              </p> <br> <p>Sperando che torni presto tutto alla normalità, ci scusiamo per il disagio.
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Chiudi</button>
+            </div>
+          </div>
+      
+        </div>
+      </div>
 
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
@@ -48,8 +76,11 @@
             <a class="nav-link js-scroll-trigger" href="#portfolio">Cartoline</a>
           </li>
           <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#team">Chi siamo?</a>
+              <a class="nav-link js-scroll-trigger" href="#team">Chi siamo</a>
             </li>
+            <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="./iscriviti.html">Iscrizione</a>
+              </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#contact">Seguici</a>
           </li>
@@ -68,7 +99,9 @@
         </div>
         <div class="col-lg-8 align-self-baseline">
           <p class="text-white-75 font-weight-light mb-5">L'evento della comunità italiana di QGIS per conoscersi e far vedere che ogni utente, dallo studente al professionista, dal programmatore esperto al neofita, può contribuire al progetto di GIS più libero del mondo!</p>
-          <a class="btn btn-primary btn-xl js-scroll-trigger" style="background-color: #f4623a!important" href="#about">Scopri di più!</a>
+          <a class="btn btn-primary btn-xl js-scroll-trigger" style="background-color: #f4623a!important" href="#about">Scopri di più!</a> <br>
+          <img src="img/gfoss.png" alt="gfoss.it logo" style="max-width: 40%; padding-top: 5%; position:relative;"></img>
+
         </div>
       </div>
     </div>
@@ -82,7 +115,7 @@
           <h2 class="text-white mt-0">Tre giorni, trenta partecipanti, un solo software!</h2>
           <hr class="divider light my-4">
           <p class="text-white-50 mb-4">Il QGIS Summer Camp, come tutti gli eventi di QGIS Italia (Hackfest, etc.), è un momento per conoscere chi usa QGIS, per condividere esperienze e contribuire allo sviluppo di QGIS. Non serve essere uno sviluppatore, i nostri eventi sono ì trasversali, per tutti e soprattutto liberi.</p>
-          <a class="btn btn-light btn-xl js-scroll-trigger" href="#" target="_blank">Iscriviti</a>
+          <a class="btn btn-light btn-xl js-scroll-trigger" href="./iscriviti.html" target="_blank">Iscriviti</a>
         </div>
       </div>
     </div>
@@ -212,14 +245,7 @@
     </div>
   </section>
 
-  <!-- Call to Action Section -->
-  <!-- <section class="page-section bg-dark text-white">
-    <div class="container text-center">
-      <h2 class="mb-4">Free Download at Start Bootstrap!</h2> -->
-      <!-- <a class="btn btn-light btn-xl" href="https://startbootstrap.com/themes/creative/">Download Now!</a> -->
-    <!-- </div>  </section> -->
-
-
+ 
 <!-- Team -->
 <section id="team" class="page-section bg-dark text-white">
   <div class="container">
@@ -966,7 +992,7 @@
   </footer>
 
   <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
+  
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
   <!-- Plugin JavaScript -->
